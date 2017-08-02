@@ -1,0 +1,170 @@
+{
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.094874,
+            "ru_nvcsw": 159,
+            "ru_maxrss_kb": 64096,
+            "ru_stime_sec": 0.041744000000000003,
+            "ru_minflt": 15301,
+            "ru_majflt": 0,
+            "ru_nivcsw": 45
+        },
+        "nQuads": 3880,
+        "Frontend(%)": 55.800685789569641,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_maxrss_kb": 0,
+            "ru_stime_sec": 0.0,
+            "ru_minflt": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "nMops": 13368,
+        "totalObjSize": 318000,
+        "ru_self_end": {
+            "ru_utime_sec": 0.17002300000000001,
+            "ru_nvcsw": 232,
+            "ru_maxrss_kb": 73212,
+            "ru_stime_sec": 0.061131999999999999,
+            "ru_minflt": 19121,
+            "ru_majflt": 0,
+            "ru_nivcsw": 61
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 2,
+            "ru_maxrss_kb": 21916,
+            "ru_stime_sec": 0.0038890000000000001,
+            "ru_minflt": 601,
+            "ru_majflt": 0,
+            "ru_nivcsw": 2
+        },
+        "mopSpeed": 177886.59862406683,
+        "quadSpeed": 51630.760223023586,
+        "outputSizePerQuad": 81.0,
+        "mop/quad": 3.4453608247422682,
+        "CodeGen(%)": 44.199314210430359
+    },
+    "MlibObjs": {},
+    "PEModules": [],
+    "PrevCompiledModules": {
+        "...MASTER...": {
+            "amcQw_d": {
+                "out": "objs/amcQw_d.o",
+                "bytes": 7945,
+                "mod": "...MASTER...",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "fa_nbits_sub": {
+            "hjguG_d": {
+                "out": "hjguG_d.o",
+                "bytes": 13358,
+                "archive": "archive.9/_31312_archive_1.a",
+                "mod": "fa_nbits_sub",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "out": "reYIK_d.o",
+                "bytes": 32686,
+                "archive": "archive.9/_31312_archive_1.a",
+                "mod": "std",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "dut": {
+            "qKwL8_d": {
+                "out": "qKwL8_d.o",
+                "bytes": 92943,
+                "archive": "archive.9/_31312_archive_1.a",
+                "mod": "dut",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "full_adder": {
+            "BEdzp_d": {
+                "out": "BEdzp_d.o",
+                "bytes": 9103,
+                "archive": "archive.9/_31312_archive_1.a",
+                "mod": "full_adder",
+                "mode": 4,
+                "checksum": 0
+            }
+        }
+    },
+    "CompileStatus": "Successful",
+    "NameTable": {
+        "comp_three_two_0000": [
+            "comp_three_two_0000",
+            "LbZUN",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "dut": [
+            "dut",
+            "qKwL8",
+            "module"
+        ],
+        "full_adder": [
+            "full_adder",
+            "BEdzp",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "fa_nbits_sub": [
+            "fa_nbits_sub",
+            "hjguG",
+            "module"
+        ]
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "SIMBData": {
+        "bytes": 93624,
+        "out": "amcQwB.o"
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "dut",
+        "dut",
+        "comp_three_two_0000",
+        "comp_three_two_0000",
+        "full_adder",
+        "full_adder",
+        "fa_nbits_sub",
+        "fa_nbits_sub"
+    ],
+    "CompileProcesses": [
+        "cgproc.31312.json"
+    ],
+    "Misc": {
+        "default_output_dir": "csrc",
+        "daidir": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical/adders/dve.daidir",
+        "cwd": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical/adders",
+        "archive_dir": "archive.9",
+        "csrc": "csrc",
+        "csrc_abs": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical/adders/csrc",
+        "daidir_abs": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical/adders/dve.daidir"
+    }
+}

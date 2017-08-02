@@ -1,0 +1,14 @@
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Mar  7 19:14 2017
+a           0 b          0 c          0 d          0 sum          -8
+a         127 b         60 c         45 d         35 sum         707
+a          -1 b        121 c          1 d          1 sum         387
+a         127 b        127 c        127 d        127 sum        1016
+a        -128 b       -128 c       -128 d       -128 sum        1024
+$finish called from file "csa_eight_tb.v", line 98.
+$finish at simulation time                   70
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 70
+CPU Time:      0.210 seconds;       Data structure size:   0.0Mb
+Tue Mar  7 19:14:41 2017

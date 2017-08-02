@@ -1,0 +1,16 @@
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/adders/comp_four_two.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/adders/comp_three_two.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/adders/csa_eight.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/adders/fa4.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/adders/full_adder.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dct_col.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dct_col_stage2.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dct_stage1.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dct_stage2.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dct_tb.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dff.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dff_1bit.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dff_1bit_level_convert.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dff_level_convert.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/mult/mult.v
+/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_top.v

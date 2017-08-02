@@ -1,0 +1,318 @@
+16:49:37    2421 --> ...                                                                                      [tcl] ucliGUI::start /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dve -ucligui +vc +define+ +lint=PCWM +memcbk
+16:49:37    2422 --> ...                                                                                          [tcl] set ucliGUI::state
+16:49:37    2423 --> ...                                                                                              [tcl] gui_update_simulator_buttons
+16:49:38    2424 --> ...                                                                                                  [tcl] set ucliGUI::state
+16:49:38    2425 --> ...  [tcl] ucliCore::getToolPID
+16:49:38    2426 --> ...      [tcl] synopsys::env hasTB
+16:49:38    2427 --> ...          [tcl] trigger_hier_stack_context_switch 0
+16:49:38    2428 --> ...              [tcl] synUtils::setDVEInitPhase 1
+16:49:38    2429 --> ...                  [tcl] gui_get_env SIMSETUP::SIMVPD
+16:49:38    2430 --> ...                      [tcl] synopsys::dump -type VPD -file /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/inter.vpd -locking
+16:49:38    2431 --> ...                          [tcl] synopsys::dump -autoflush on -fid VPD9
+16:49:38    2432 --> ...                              [tcl] set ::dve_fid VPD9
+16:49:38    2433 --> ...                                  [tcl] synUtils::setDVEInitPhase 0
+16:49:38    2434 --> ...                                      [tcl] ucliCore::getToolPID
+16:49:38    2435 --> ...                                          [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpmVIlsQ
+16:49:38    2436 --> ...                                              [tcl] synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.bohanw.17379}
+16:49:38    2437 --> ...                                                  [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.bohanw.17379}
+16:49:38    2438 --> ...                                                      [tcl] config endofsim noexit
+16:49:38    2439 --> ...                                                          [tcl] config onfail enable all
+16:49:38    2440 --> ...                                                              [tcl] config syscaddplainmembers
+16:49:38    2441 --> ...                                                                  [tcl] config syscaddsourcenames
+16:49:38    2442 --> ...                                                                      [tcl] config syscaddstructtypes
+16:49:38    2443 --> ...                                                                          [tcl] synopsys::listing -disable
+16:49:38    2444 --> ...                                                                              [tcl] # Begin_DVE_Session_Save_Info
+16:49:38    2445 --> ...                                                                                  [tcl] # DVE restart session
+16:49:38    2446 --> ...                                                                                      [tcl] # Saved on Thu Mar 16 16:49:37 2017
+16:49:38    2447 --> ...                                                                                          [tcl] # Designs open: 1
+16:49:38    2448 --> ...                                                                                              [tcl] #   Sim: /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dve
+16:49:38    2449 --> ...                                                                                                  [tcl] # Toplevel windows open: 2
+16:49:38    2450 --> ...  [tcl] # 	TopLevel.1
+16:49:38    2451 --> ...      [tcl] # 	TopLevel.2
+16:49:38    2452 --> ...          [tcl] #   Source.1: dut
+16:49:38    2453 --> ...              [tcl] #   Wave.1: 19 signals
+16:49:38    2454 --> ...                  [tcl] #   Group count = 13
+16:49:38    2455 --> ...                      [tcl] #   Group Group1 signal count = 10
+16:49:38    2456 --> ...                          [tcl] #   Group col0 signal count = 16
+16:49:38    2457 --> ...                              [tcl] #   Group col1 signal count = 19
+16:49:38    2458 --> ...                                  [tcl] #   Group Group2 signal count = 9
+16:49:38    2459 --> ...                                      [tcl] #   Group Group3 signal count = 1
+16:49:38    2460 --> ...                                          [tcl] #   Group Group4 signal count = 3
+16:49:38    2461 --> ...                                              [tcl] #   Group Group5 signal count = 0
+16:49:38    2462 --> ...                                                  [tcl] #   Group i00 signal count = 32
+16:49:38    2463 --> ...                                                      [tcl] #   Group Group6 signal count = 2
+16:49:38    2464 --> ...                                                          [tcl] #   Group Group7 signal count = 7
+16:49:38    2465 --> ...                                                              [tcl] # End_DVE_Session_Save_Info
+16:49:38    2466 --> ...                                                                  [tcl] # DVE version: L-2016.06_Full64
+16:49:38    2467 --> ...                                                                      [tcl] # DVE build date: May 24 2016 21:01:02
+16:49:38    2468 --> ...                                                                          [tcl] #<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+16:49:38    2469 --> ...                                                                              [tcl] gui_set_loading_session_type Restart
+16:49:38    2470 --> ...                                                                                  [tcl] gui_continuetime_set
+16:49:38    2471 --> ...                                                                                      [tcl] gui_clear_window -type Wave
+16:49:38    2472 --> ...                                                                                          [tcl] gui_clear_window -type List
+16:49:38    2473 --> ...                                                                                              [tcl] # Application preferences
+16:49:38    2474 --> ...                                                                                                  [tcl] gui_set_pref_value -key app_default_font -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+16:49:38    2475 --> ...  [tcl] gui_src_preferences -tabstop 8 -maxbits 24 -windownumber 1
+16:49:38    2476 --> ...      [tcl] #<WindowLayout>
+16:49:38    2477 --> ...          [tcl] # DVE top-level session
+16:49:38    2478 --> ...              [tcl] # Create and position top-level window: TopLevel.1
+16:49:38    2479 --> ...                  [tcl] set TopLevel.1 TopLevel.1
+16:49:38    2480 --> ...                      [tcl] # Docked window settings
+16:49:38    2481 --> ...                          [tcl] set HSPane.1 HSPane.1
+16:49:38    2482 --> ...                              [tcl] set Hier.1 Hier.1
+16:49:38    2483 --> ...                                  [tcl] set DLPane.1 DLPane.1
+16:49:38    2484 --> ...                                      [tcl] set Data.1 Data.1
+16:49:38    2485 --> ...                                          [tcl] set Console.1 Console.1
+16:49:38    2486 --> ...                                              [tcl] gui_sync_global -id ${TopLevel.1} -option true
+16:49:38    2487 --> ...                                                  [tcl] # MDI window settings
+16:49:38    2488 --> ...                                                      [tcl] set Source.1 Source.1
+16:49:38    2489 --> ...                                                          [tcl] gui_update_layout -id ${Source.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false}}
+16:49:38    2490 --> ...                                                              [tcl] # End MDI window settings
+16:49:38    2491 --> ...                                                                  [tcl] # Create and position top-level window: TopLevel.2
+16:49:38    2492 --> ...                                                                      [tcl] set TopLevel.2 TopLevel.2
+16:49:38    2493 --> ...                                                                          [tcl] # Docked window settings
+16:49:38    2494 --> ...                                                                              [tcl] gui_sync_global -id ${TopLevel.2} -option true
+16:49:38    2495 --> ...                                                                                  [tcl] # MDI window settings
+16:49:38    2496 --> ...                                                                                      [tcl] set Wave.1 Wave.1
+16:49:38    2497 --> ...                                                                                          [tcl] gui_update_layout -id ${Wave.1} {{show_state maximized} {dock_state undocked} {dock_on_new_line false} {child_wave_left 743} {child_wave_right 1811} {child_wave_colname 369} {child_wave_colvalue 370} {child_wave_col1 0} {child_wave_col2 1}}
+16:49:38    2498 --> ...                                                                                              [tcl] # End MDI window settings
+16:49:38    2499 --> ...                                                                                                  [tcl] #</WindowLayout>
+16:49:38    2500 --> ...  [tcl] #<Database>
+16:49:38    2501 --> ...      [tcl] gui_set_precision 1s
+16:49:38    2502 --> ...          [tcl] gui_set_time_units 1s
+16:49:38    2503 --> ...              [tcl] #</Database>
+16:49:38    2504 --> ...                  [tcl] # DVE Global setting session:
+16:49:38    2505 --> ...                      [tcl] # Global: Breakpoints
+16:49:38    2506 --> ...                          [tcl] # Global: Bus
+16:49:38    2507 --> ...                              [tcl] # Global: Expressions
+16:49:38    2508 --> ...                                  [tcl] # Global: Signal Time Shift
+16:49:38    2509 --> ...                                      [tcl] # Global: Signal Compare
+16:49:38    2510 --> ...                                          [tcl] # Global: Signal Groups
+16:49:38    2511 --> ...                                              [tcl] gui_load_child_values {dut.d0.d2.col0.i00.f1.f0[0]}
+16:49:38    2512 --> ...                                                  [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[0]}} -scope "." -depth 1 -fid VPD9
+16:49:38    2513 --> ...                                                      [tcl] gui_load_child_values {dut.d0.d2.col0.i00.c0}
+16:49:38    2514 --> ...                                                          [tcl] synopsys::dump -add {dut.d0.d2.col0.i00.c0} -scope "." -depth 1 -fid VPD9
+16:49:39    2515 --> ...                                                              [tcl] gui_load_child_values {dut.d0.d2.col0}
+16:49:39    2516 --> ...                                                                  [tcl] synopsys::dump -add {dut.d0.d2.col0} -scope "." -depth 1 -fid VPD9
+16:49:39    2517 --> ...                                                                      [tcl] gui_load_child_values {dut.d0.d2.col1}
+16:49:39    2518 --> ...                                                                          [tcl] synopsys::dump -add {dut.d0.d2.col1} -scope "." -depth 1 -fid VPD9
+16:49:39    2519 --> ...                                                                              [tcl] gui_load_child_values {dut.d0.d2.col0.i00.f1.f0[7]}
+16:49:39    2520 --> ...                                                                                  [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[7]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2521 --> ...                                                                                      [tcl] gui_load_child_values {dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa}
+16:49:39    2522 --> ...                                                                                          [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa}} -scope "." -depth 1 -fid VPD9
+16:49:39    2523 --> ...                                                                                              [tcl] gui_load_child_values {dut.d0.d2.col0.i00.f1.f0[2]}
+16:49:39    2524 --> ...                                                                                                  [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[2]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2525 --> ...  [tcl] gui_load_child_values {dut.d0.d2.col0.i00.f1.f0[9]}
+16:49:39    2526 --> ...      [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[9]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2527 --> ...          [tcl] gui_load_child_values {dut.d0.d2.col0.i00.c0.c1.genblk1[7].genblk1.fa}
+16:49:39    2528 --> ...              [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.c0.c1.genblk1[7].genblk1.fa}} -scope "." -depth 1 -fid VPD9
+16:49:39    2529 --> ...                  [tcl] gui_load_child_values {dut.d0.d2.col0.i00.f1.f0[15]}
+16:49:39    2530 --> ...                      [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[15]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2531 --> ...                          [tcl] gui_load_child_values {dut.d0.d1.col0[0]}
+16:49:39    2532 --> ...                              [tcl] synopsys::dump -add {{dut.d0.d1.col0[0]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2533 --> ...                                  [tcl] gui_load_child_values {dut.d0.d2.col0.i00.f1.f0[4]}
+16:49:39    2534 --> ...                                      [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[4]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2535 --> ...                                          [tcl] gui_load_child_values {dut.d0.d1.col0[7]}
+16:49:39    2536 --> ...                                              [tcl] synopsys::dump -add {{dut.d0.d1.col0[7]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2537 --> ...                                                  [tcl] gui_load_child_values {dut.d0.d1.col0[0].i00}
+16:49:39    2538 --> ...                                                      [tcl] synopsys::dump -add {{dut.d0.d1.col0[0].i00}} -scope "." -depth 1 -fid VPD9
+16:49:39    2539 --> ...                                                          [tcl] gui_load_child_values {dut.d0.d1.col0[0].i01}
+16:49:39    2540 --> ...                                                              [tcl] synopsys::dump -add {{dut.d0.d1.col0[0].i01}} -scope "." -depth 1 -fid VPD9
+16:49:39    2541 --> ...                                                                  [tcl] gui_load_child_values {dut.d0.d2.col0.i00.f1.f0[1]}
+16:49:39    2542 --> ...                                                                      [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[1]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2543 --> ...                                                                          [tcl] gui_load_child_values {dut.d0.d2}
+16:49:39    2544 --> ...                                                                              [tcl] synopsys::dump -add {dut.d0.d2} -scope "." -depth 1 -fid VPD9
+16:49:39    2545 --> ...                                                                                  [tcl] gui_load_child_values {dut.d0.d2.col0.i00.f1.f0[8]}
+16:49:39    2546 --> ...                                                                                      [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[8]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2547 --> ...                                                                                          [tcl] gui_load_child_values {dut.d0.d2.col0.i00.f1.f0[3]}
+16:49:39    2548 --> ...                                                                                              [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[3]}} -scope "." -depth 1 -fid VPD9
+16:49:39    2549 --> ...                                                                                                  [tcl] gui_load_child_values {dut.d0.d2.col0.i00.c0.c1.genblk1[9].genblk1.fa}
+16:49:39    2550 --> ...  [tcl] synopsys::dump -add {{dut.d0.d2.col0.i00.c0.c1.genblk1[9].genblk1.fa}} -scope "." -depth 1 -fid VPD9
+16:49:39    2551 --> ...      [tcl] set _session_group_77 Group1
+16:49:39    2552 --> ...          [tcl] gui_sg_create "$_session_group_77"
+16:49:39    2553 --> ...              [tcl] set Group1 "$_session_group_77"
+16:49:39    2554 --> ...                  [tcl] gui_sg_addsignal -group "$_session_group_77" { dut.d0.d2.data_in dut.d0.d2.dct_en dut.d0.d2.approx_en dut.d0.d2.clk dut.d0.d2.rst dut.d0.d2.data_out dut.d0.d2.dct_stage_done dut.d0.d2.wr_en dut.d0.d2.dct_col_done }
+16:49:39    2555 --> ...                      [tcl] set _session_group_78 $_session_group_77|
+16:49:39    2556 --> ...                          [tcl] append _session_group_78 {col0[7]}
+16:49:39    2557 --> ...                              [tcl] gui_sg_create "$_session_group_78"
+16:49:39    2558 --> ...                                  [tcl] set {Group1|col0[7]} "$_session_group_78"
+16:49:39    2559 --> ...                                      [tcl] gui_sg_addsignal -group "$_session_group_78" { {dut.d0.d1.col0[7].APPROX_BITS} {dut.d0.d1.col0[7].SIZE_OUT} {dut.d0.d1.col0[7].approx_en} {dut.d0.d1.col0[7].cnt} {dut.d0.d1.col0[7].next_data_out} {dut.d0.d1.col0[7].sum} {dut.d0.d1.col0[7].n_cnt} {dut.d0.d1.col0[7].data_out} {dut.d0.d1.col0[7].dct_coeff} {dut.d0.d1.col0[7].SIZE} {dut.d0.d1.col0[7].m} {dut.d0.d1.col0[7].data_in} {dut.d0.d1.col0[7].wr_en} {dut.d0.d1.col0[7].clk} {dut.d0.d1.col0[7].sum_scaled} {dut.d0.d1.col0[7].done} {dut.d0.d1.col0[7].start} {dut.d0.d1.col0[7].SIZE_MULT} {dut.d0.d1.col0[7].rst} }
+16:49:39    2560 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:dut.d0.d1.col0[7].APPROX_BITS}}
+16:49:39    2561 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:dut.d0.d1.col0[7].APPROX_BITS}}
+16:49:39    2562 --> ...                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:dut.d0.d1.col0[7].SIZE_OUT}}
+16:49:39    2563 --> ...                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:dut.d0.d1.col0[7].SIZE_OUT}}
+16:49:39    2564 --> ...                                                          [tcl] gui_set_radix -radix enum -signals {{Sim:dut.d0.d1.col0[7].dct_coeff}}
+16:49:39    2565 --> ...                                                              [tcl] synopsys::dump -add {{dut.d0.d1.col0[7].dct_coeff}} -aggregates  -fid VPD9
+16:49:39    2566 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {{Sim:dut.d0.d1.col0[7].SIZE}}
+16:49:39    2567 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:dut.d0.d1.col0[7].SIZE}}
+16:49:39    2568 --> ...                                                                          [tcl] gui_set_radix -radix {decimal} -signals {{Sim:dut.d0.d1.col0[7].SIZE_MULT}}
+16:49:39    2569 --> ...                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:dut.d0.d1.col0[7].SIZE_MULT}}
+16:49:39    2570 --> ...                                                                                  [tcl] gui_sg_move "$_session_group_78" -after "$_session_group_77" -pos 9
+16:49:39    2571 --> ...                                                                                      [tcl] set _session_group_79 col0
+16:49:39    2572 --> ...                                                                                          [tcl] gui_sg_create "$_session_group_79"
+16:49:39    2573 --> ...                                                                                              [tcl] set col0 "$_session_group_79"
+16:49:39    2574 --> ...                                                                                                  [tcl] gui_sg_addsignal -group "$_session_group_79" { dut.d0.d2.col0.cnt dut.d0.d2.col0.next_data_out dut.d0.d2.col0.sum dut.d0.d2.col0.n_cnt dut.d0.d2.col0.data_out dut.d0.d2.col0.dct_coeff dut.d0.d2.col0.SIZE dut.d0.d2.col0.m dut.d0.d2.col0.data_in dut.d0.d2.col0.wr_en dut.d0.d2.col0.clk dut.d0.d2.col0.sum_scaled dut.d0.d2.col0.done dut.d0.d2.col0.start dut.d0.d2.col0.SIZE_MULT dut.d0.d2.col0.rst }
+16:49:39    2575 --> ...  [tcl] gui_set_radix -radix enum -signals {Sim:dut.d0.d2.col0.dct_coeff}
+16:49:39    2576 --> ...      [tcl] synopsys::dump -add {dut.d0.d2.col0.dct_coeff} -aggregates  -fid VPD9
+16:49:39    2577 --> ...          [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col0.SIZE}
+16:49:39    2578 --> ...              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col0.SIZE}
+16:49:39    2579 --> ...                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col0.SIZE_MULT}
+16:49:39    2580 --> ...                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col0.SIZE_MULT}
+16:49:39    2581 --> ...                          [tcl] set _session_group_80 col1
+16:49:39    2582 --> ...                              [tcl] gui_sg_create "$_session_group_80"
+16:49:39    2583 --> ...                                  [tcl] set col1 "$_session_group_80"
+16:49:39    2584 --> ...                                      [tcl] gui_sg_addsignal -group "$_session_group_80" { dut.d0.d2.col1.APPROX_BITS dut.d0.d2.col1.SIZE_OUT dut.d0.d2.col1.approx_en dut.d0.d2.col1.cnt dut.d0.d2.col1.next_data_out dut.d0.d2.col1.sum dut.d0.d2.col1.n_cnt dut.d0.d2.col1.data_out dut.d0.d2.col1.dct_coeff dut.d0.d2.col1.SIZE dut.d0.d2.col1.m dut.d0.d2.col1.data_in dut.d0.d2.col1.wr_en dut.d0.d2.col1.clk dut.d0.d2.col1.sum_scaled dut.d0.d2.col1.done dut.d0.d2.col1.start dut.d0.d2.col1.SIZE_MULT dut.d0.d2.col1.rst }
+16:49:39    2585 --> ...                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col1.APPROX_BITS}
+16:49:39    2586 --> ...                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col1.APPROX_BITS}
+16:49:39    2587 --> ...                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col1.SIZE_OUT}
+16:49:39    2588 --> ...                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col1.SIZE_OUT}
+16:49:39    2589 --> ...                                                          [tcl] gui_set_radix -radix enum -signals {Sim:dut.d0.d2.col1.dct_coeff}
+16:49:39    2590 --> ...                                                              [tcl] synopsys::dump -add {dut.d0.d2.col1.dct_coeff} -aggregates  -fid VPD9
+16:49:39    2591 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col1.SIZE}
+16:49:39    2592 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col1.SIZE}
+16:49:39    2593 --> ...                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col1.SIZE_MULT}
+16:49:39    2594 --> ...                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col1.SIZE_MULT}
+16:49:39    2595 --> ...                                                                                  [tcl] set _session_group_81 Group2
+16:49:39    2596 --> ...                                                                                      [tcl] gui_sg_create "$_session_group_81"
+16:49:39    2597 --> ...                                                                                          [tcl] set Group2 "$_session_group_81"
+16:49:39    2598 --> ...                                                                                              [tcl] gui_sg_addsignal -group "$_session_group_81" { dut.d0.d2.dct_en dut.d0.d2.data_out dut.d0.d2.dct_stage_done dut.d0.d2.data_in dut.d0.d2.wr_en dut.d0.d2.clk dut.d0.d2.dct_col_done dut.d0.d2.rst dut.d0.d2.next_wr_en }
+16:49:39    2599 --> ...                                                                                                  [tcl] set _session_group_82 Group3
+16:49:39    2600 --> ...  [tcl] gui_sg_create "$_session_group_82"
+16:49:39    2601 --> ...      [tcl] set Group3 "$_session_group_82"
+16:49:39    2602 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_82" { {dut.d0.d1.col0[0].APPROX_BITS} }
+16:49:39    2603 --> ...              [tcl] gui_set_radix -radix {decimal} -signals {{Sim:dut.d0.d1.col0[0].APPROX_BITS}}
+16:49:39    2604 --> ...                  [tcl] gui_set_radix -radix {twosComplement} -signals {{Sim:dut.d0.d1.col0[0].APPROX_BITS}}
+16:49:39    2605 --> ...                      [tcl] set _session_group_83 Group4
+16:49:39    2606 --> ...                          [tcl] gui_sg_create "$_session_group_83"
+16:49:39    2607 --> ...                              [tcl] set Group4 "$_session_group_83"
+16:49:39    2608 --> ...                                  [tcl] gui_sg_addsignal -group "$_session_group_83" { {dut.d0.d1.col0[0].i00.approx_en_add} {dut.d0.d1.col0[0].i00.approx_en_sub} {dut.d0.d1.col0[0].i01.approx_en} }
+16:49:39    2609 --> ...                                      [tcl] set _session_group_84 Group5
+16:49:39    2610 --> ...                                          [tcl] gui_sg_create "$_session_group_84"
+16:49:39    2611 --> ...                                              [tcl] set Group5 "$_session_group_84"
+16:49:39    2612 --> ...                                                  [tcl] set _session_group_85 i00
+16:49:39    2613 --> ...                                                      [tcl] gui_sg_create "$_session_group_85"
+16:49:39    2614 --> ...                                                          [tcl] set i00 "$_session_group_85"
+16:49:39    2615 --> ...                                                              [tcl] gui_sg_addsignal -group "$_session_group_85" { dut.d0.d2.col0.i00.mcand dut.d0.d2.col0.i00.APPROX_BITS dut.d0.d2.col0.i00.cout_45_shifted dut.d0.d2.col0.i00.result dut.d0.d2.col0.i00.approx_en dut.d0.d2.col0.i00.result0 dut.d0.d2.col0.i00.result1 dut.d0.d2.col0.i00.result2 dut.d0.d2.col0.i00.mcand_extend1 dut.d0.d2.col0.i00.result3 dut.d0.d2.col0.i00.mcand_extend2 dut.d0.d2.col0.i00.result4 dut.d0.d2.col0.i00.approx_en_sub dut.d0.d2.col0.i00.result5 dut.d0.d2.col0.i00.result6 dut.d0.d2.col0.i00.cout_45 dut.d0.d2.col0.i00.dct_coeff dut.d0.d2.col0.i00.SIZE dut.d0.d2.col0.i00.sign dut.d0.d2.col0.i00.coeff_in dut.d0.d2.col0.i00.sum_45 dut.d0.d2.col0.i00.sum_45_shifted dut.d0.d2.col0.i00.cout0 dut.d0.d2.col0.i00.cout1 dut.d0.d2.col0.i00.cout2 dut.d0.d2.col0.i00.rca_approx_en dut.d0.d2.col0.i00.cout3 dut.d0.d2.col0.i00.cout4 dut.d0.d2.col0.i00.cout5 dut.d0.d2.col0.i00.cout6 dut.d0.d2.col0.i00.SIZE_MULT dut.d0.d2.col0.i00.approx_en_add }
+16:49:39    2616 --> ...                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col0.i00.APPROX_BITS}
+16:49:39    2617 --> ...                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col0.i00.APPROX_BITS}
+16:49:39    2618 --> ...                                                                          [tcl] gui_set_radix -radix enum -signals {Sim:dut.d0.d2.col0.i00.dct_coeff}
+16:49:39    2619 --> ...                                                                              [tcl] synopsys::dump -add {dut.d0.d2.col0.i00.dct_coeff} -aggregates  -fid VPD9
+16:49:39    2620 --> ...                                                                                  [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col0.i00.SIZE}
+16:49:39    2621 --> ...                                                                                      [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col0.i00.SIZE}
+16:49:39    2622 --> ...                                                                                          [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col0.i00.SIZE_MULT}
+16:49:39    2623 --> ...                                                                                              [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col0.i00.SIZE_MULT}
+16:49:39    2624 --> ...                                                                                                  [tcl] set _session_group_86 Group6
+16:49:39    2625 --> ...  [tcl] gui_sg_create "$_session_group_86"
+16:49:39    2626 --> ...      [tcl] set Group6 "$_session_group_86"
+16:49:39    2627 --> ...          [tcl] gui_sg_addsignal -group "$_session_group_86" { dut.d0.d2.col0.i00.c0.APPROX_BITS dut.d0.d2.col0.i00.c0.approx_en }
+16:49:39    2628 --> ...              [tcl] gui_set_radix -radix {decimal} -signals {Sim:dut.d0.d2.col0.i00.c0.APPROX_BITS}
+16:49:39    2629 --> ...                  [tcl] gui_set_radix -radix {twosComplement} -signals {Sim:dut.d0.d2.col0.i00.c0.APPROX_BITS}
+16:49:39    2630 --> ...                      [tcl] set _session_group_87 Group7
+16:49:39    2631 --> ...                          [tcl] gui_sg_create "$_session_group_87"
+16:49:39    2632 --> ...                              [tcl] set Group7 "$_session_group_87"
+16:49:39    2633 --> ...                                  [tcl] gui_sg_addsignal -group "$_session_group_87" { {dut.d0.d2.col0.i00.c0.c1.genblk1[7].genblk1.fa.approx_en} {dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa.approx_en} {dut.d0.d2.col0.i00.c0.c1.genblk1[9].genblk1.fa.approx_en} {dut.d0.d2.col0.i00.f1.f0[0].approx_en} {dut.d0.d2.col0.i00.f1.f0[1].approx_en} {dut.d0.d2.col0.i00.f1.f0[2].approx_en} }
+16:49:39    2634 --> ...                                      [tcl] set _session_group_88 $_session_group_87|
+16:49:39    2635 --> ...                                          [tcl] append _session_group_88 {f0[3]}
+16:49:39    2636 --> ...                                              [tcl] gui_sg_create "$_session_group_88"
+16:49:39    2637 --> ...                                                  [tcl] set {Group7|f0[3]} "$_session_group_88"
+16:49:39    2638 --> ...                                                      [tcl] gui_sg_addsignal -group "$_session_group_88" { {dut.d0.d2.col0.i00.f1.f0[7].approx_en} {dut.d0.d2.col0.i00.f1.f0[4].approx_en} {dut.d0.d2.col0.i00.f1.f0[3].approx_en} }
+16:49:39    2639 --> ...                                                          [tcl] gui_sg_move "$_session_group_88" -after "$_session_group_87" -pos 6
+16:49:39    2640 --> ...                                                              [tcl] set _session_group_89 $_session_group_88|
+16:49:39    2641 --> ...                                                                  [tcl] append _session_group_89 {f0[8]}
+16:49:39    2642 --> ...                                                                      [tcl] gui_sg_create "$_session_group_89"
+16:49:39    2643 --> ...                                                                          [tcl] set {Group7|f0[3]|f0[8]} "$_session_group_89"
+16:49:39    2644 --> ...                                                                              [tcl] gui_sg_addsignal -group "$_session_group_89" { {dut.d0.d2.col0.i00.f1.f0[8].cin} {dut.d0.d2.col0.i00.f1.f0[8].approx_en} {dut.d0.d2.col0.i00.f1.f0[8].cout} {dut.d0.d2.col0.i00.f1.f0[8].sum} {dut.d0.d2.col0.i00.f1.f0[8].a} {dut.d0.d2.col0.i00.f1.f0[8].b} {dut.d0.d2.col0.i00.f1.f0[9].approx_en} {dut.d0.d2.col0.i00.f1.f0[15].approx_en} }
+16:49:39    2645 --> ...                                                                                  [tcl] gui_sg_move "$_session_group_89" -after "$_session_group_88" -pos 3
+16:49:39    2646 --> ...                                                                                      [tcl] # Global: Highlighting
+16:49:39    2647 --> ...                                                                                          [tcl] # Global: Stack
+16:49:39    2648 --> ...                                                                                              [tcl] gui_change_stack_mode -mode list
+16:49:39    2649 --> ...                                                                                                  [tcl] # Post database loading setting...
+16:49:39    2650 --> ...  [tcl] # Save global setting...
+16:49:39    2651 --> ...      [tcl] # Wave/List view global setting
+16:49:39    2652 --> ...          [tcl] gui_cov_show_value -switch false
+16:49:39    2653 --> ...              [tcl] # Close all empty TopLevel windows
+16:49:39    2654 --> ...                  [tcl] foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+16:49:39    2655 --> ...                      [tcl] gui_set_loading_session_type noSession
+16:49:39    2656 --> ...                          [tcl] # DVE View/pane content session:
+16:49:39    2657 --> ...                              [tcl] # Hier 'Hier.1'
+16:49:39    2658 --> ...                                  [tcl] gui_show_window -window ${Hier.1}
+16:49:39    2659 --> ...                                      [tcl] gui_list_set_filter -id ${Hier.1} -list { {Package 1} {All 0} {Process 1} {VirtPowSwitch 0} {UnnamedProcess 1} {UDP 0} {Function 1} {Block 1} {SrsnAndSpaCell 0} {OVA Unit 1} {LeafScCell 1} {LeafVlgCell 1} {Interface 1} {LeafVhdCell 1} {$unit 1} {NamedBlock 1} {Task 1} {VlgPackage 1} {ClassDef 1} {VirtIsoCell 0} }
+16:49:39    2660 --> ...                                          [tcl] gui_list_set_filter -id ${Hier.1} -text {*}
+16:49:39    2661 --> ...                                              [tcl] gui_change_design -id ${Hier.1} -design Sim
+16:49:39    2662 --> ...                                                  [tcl] catch {gui_list_expand -id ${Hier.1} dut}
+16:49:39    2663 --> ...                                                      [tcl] catch {gui_list_expand -id ${Hier.1} dut.d0}
+16:49:39    2664 --> ...                                                          [tcl] catch {gui_list_expand -id ${Hier.1} dut.d0.d2}
+16:49:39    2665 --> ...                                                              [tcl] catch {gui_list_expand -id ${Hier.1} dut.d0.d2.col0}
+16:49:39    2666 --> ...                                                                  [tcl] catch {gui_list_expand -id ${Hier.1} dut.d0.d2.col0.i00}
+16:49:39    2667 --> ...                                                                      [tcl] catch {gui_list_expand -id ${Hier.1} dut.d0.d2.col0.i00.f1}
+16:49:39    2668 --> ...                                                                          [tcl] catch {gui_list_select -id ${Hier.1} {{dut.d0.d2.col0.i00.f1.f0[15]}}}
+16:49:39    2669 --> ...                                                                              [tcl] dveMisc::vbusExpand {dut.d0.d2.col0.i00.f1.f0[15]}
+16:49:39    2670 --> ...                                                                                  [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 80
+16:49:39    2671 --> ...                                                                                      [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+16:49:39    2672 --> ...                                                                                          [tcl] # Data 'Data.1'
+16:49:39    2673 --> ...                                                                                              [tcl] gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+16:49:39    2674 --> ...                                                                                                  [tcl] gui_list_set_filter -id ${Data.1} -text {*}
+16:49:39    2675 --> ...  [tcl] gui_list_show_data -id ${Data.1} {dut.d0.d2.col0.i00.f1.f0[15]}
+16:49:39    2676 --> ...      [tcl] gui_show_window -window ${Data.1}
+16:49:39    2677 --> ...          [tcl] catch { gui_list_select -id ${Data.1} {{dut.d0.d2.col0.i00.f1.f0[15].approx_en} }}
+16:49:39    2678 --> ...              [tcl] gui_view_scroll -id ${Data.1} -vertical -set 0
+16:49:39    2679 --> ...                  [tcl] gui_view_scroll -id ${Data.1} -horizontal -set 0
+16:49:39    2680 --> ...                      [tcl] gui_view_scroll -id ${Hier.1} -vertical -set 80
+16:49:39    2681 --> ...                          [tcl] gui_view_scroll -id ${Hier.1} -horizontal -set 0
+16:49:39    2682 --> ...                              [tcl] # Source 'Source.1'
+16:49:39    2683 --> ...                                  [tcl] gui_src_value_annotate -id ${Source.1} -switch false
+16:49:39    2684 --> ...                                      [tcl] gui_set_env TOGGLE::VALUEANNOTATE 0
+16:49:39    2685 --> ...                                          [tcl] gui_open_source -id ${Source.1}  -replace -active dut /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dct_tb.v
+16:49:39    2686 --> ...                                              [tcl] gui_view_scroll -id ${Source.1} -vertical -set 0
+16:49:39    2687 --> ...                                                  [tcl] gui_src_set_reusable -id ${Source.1}
+16:49:39    2688 --> ...                                                      [tcl] # View 'Wave.1'
+16:49:39    2689 --> ...                                                          [tcl] gui_wv_sync -id ${Wave.1} -switch false
+16:49:39    2690 --> ...                                                              [tcl] set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+16:49:39    2691 --> ...                                                                  [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value {false}
+16:49:39    2692 --> ...                                                                      [tcl] set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+16:49:39    2693 --> ...                                                                          [tcl] gui_list_set_height -id Wave -height 25
+16:49:39    2694 --> ...                                                                              [tcl] set origGroupCreationState [gui_list_create_group_when_add -wave]
+16:49:39    2695 --> ...                                                                                  [tcl] gui_list_create_group_when_add -wave -disable
+16:49:39    2696 --> ...                                                                                      [tcl] gui_wv_zoom_timerange -id ${Wave.1} 3013 9043
+16:49:39    2697 --> ...                                                                                          [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group6}
+16:49:39    2698 --> ...                                                                                              [tcl] gui_list_add_group -id ${Wave.1} -after {New Group} {Group7}
+16:49:39    2699 --> ...                                                                                                  [tcl] gui_list_add_group -id ${Wave.1}  -after {dut.d0.d2.col0.i00.f1.f0[2].approx_en} {{Group7|f0[3]}}
+16:49:39    2700 --> ...  [tcl] gui_list_add_group -id ${Wave.1}  -after {dut.d0.d2.col0.i00.f1.f0[3].approx_en} {{Group7|f0[3]|f0[8]}}
+16:49:39    2701 --> ...      [tcl] gui_list_select -id ${Wave.1} {{dut.d0.d2.col0.i00.f1.f0[9].approx_en} }
+16:49:39    2702 --> ...          [tcl] gui_seek_criteria -id ${Wave.1} {Any Edge}
+16:49:39    2703 --> ...              [tcl] gui_set_env TOGGLE::DEFAULT_WAVE_WINDOW ${Wave.1}
+16:49:39    2704 --> ...                  [tcl] gui_set_pref_value -category Wave -key exclusiveSG -value $groupExD
+16:49:39    2705 --> ...                      [tcl] gui_list_set_height -id Wave -height $origWaveHeight
+16:49:39    2706 --> ...                          [tcl] if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+16:49:39    2707 --> ...                              [tcl] if { $groupExD } {  gui_msg_report -code DVWW028 }
+16:49:39    2708 --> ...                                  [tcl] gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
+16:49:39    2709 --> ...                                      [tcl] gui_list_set_filter -id ${Wave.1} -text {*}
+16:49:39    2710 --> ...                                          [tcl] gui_list_set_insertion_bar  -id ${Wave.1} -group {Group7|f0[3]|f0[8]}  -item {dut.d0.d2.col0.i00.f1.f0[15].approx_en} -position below
+16:49:39    2711 --> ...                                              [tcl] gui_view_scroll -id ${Wave.1} -vertical -set 0
+16:49:39    2712 --> ...                                                  [tcl] gui_show_grid -id ${Wave.1} -enable false
+16:49:39    2713 --> ...                                                      [tcl] # Restore toplevel window zorder
+16:49:39    2714 --> ...                                                          [tcl] # The toplevel window could be closed if it has no view/pane
+16:49:39    2715 --> ...                                                              [tcl] if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${DLPane.1} }
+16:49:39    2716 --> ...                                                                  [tcl] if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
+16:49:39    2717 --> ...                                                                      [tcl] #</Session>
+16:49:40    2718 --> ...                                                                          [tcl] synopsys::run
+16:49:40    2719 --> ...                                                                              [tcl] set ucliGUI::state
+16:49:40    2720 --> ...                                                                                  [tcl] set ucliGUI::state
+16:49:40    2721 --> ...                                                                                      [tcl] gui_update_simulator_buttons
+16:49:40    2722 --> ...                                                                                          [tcl] set ucliGUI::state
+16:49:40    2723 --> ...                                                                                              [tcl] set ucliGUI::state
+16:49:40    2724 --> ...                                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+16:49:40    2725 --> ...  [tcl] set dveMisc::result
+16:49:40    2726 --> ...      [tcl] gui_update_simulator_buttons
+16:49:40    2727 --> ...          [tcl] dveMisc::vbusExpand dut
+16:49:47    2728 --> ...              [tcl] dveMisc::vbusExpand dut.d0.d2.col0.i00.f3
+16:52:52    2729 --> ...                  [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+16:52:52    2730 --> ...                      [tcl] synopsys::finish
+16:52:52    2731 --> ...                          [tcl] set ucliGUI::state
+16:52:52    2732 --> ...                              [tcl] set ucliGUI::state
+16:52:52    2733 --> ...                                  [tcl] catch {senv activeDomain} dveMisc::result 
+16:52:52    2734 --> ...                                      [tcl] set dveMisc::result
+16:52:52    2735 --> ...                                          [tcl] gui_update_simulator_buttons
+16:52:52    2736 --> ...                                              [tcl] catch {senv activeDomain} dveMisc::result 
+16:52:52    2737 --> ...                                                  [tcl] set dveMisc::result
+16:52:52    2738 --> ...                                                      [tcl] ucli_exit

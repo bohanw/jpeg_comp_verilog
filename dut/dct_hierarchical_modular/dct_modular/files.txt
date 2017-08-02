@@ -1,0 +1,15 @@
+./dff_1bit.v
+./dff_1bit_level_convert.v
+./dct_col_comb.v
+./dct_stage1_ff.v
+./dct_stage1_dff_col.v
+./dct_stage1_dff.v
+./dct_stage2_dff.v
+./dct_stage2_comb.v
+./dct_stage2_dff_col.v
+./dff_level_convert.v
+./dct_top.v
+./dct_modules_vdd2.v
+./transpose.v
+./dct_stage1_col_ctrl.v
+./dff.v

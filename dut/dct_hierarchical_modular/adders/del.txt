@@ -1,0 +1,42 @@
+./fa4.v:	full_adder f0 [SIZE:0] (.a(a_ext),.b(b_ext),.cin({c_internal, cin}),.approx_en(approx_en_ext),.sum(sum),.cout({cout, c_internal}));
+./fa4.v:	full_adder f0 [SIZE-1:0] (.a(a),.b(b),.cin({c_internal, cin}),.approx_en(approx_en),.sum(sum),.cout({cout, c_internal}));
+./comp_three_two.v:				full_adder fa(.a(a[i]),.b(b[i]),.cin(cin[i]),.approx_en(1'b1),.sum(sum[i]),.cout(cout[i]));
+./comp_three_two.v:				full_adder fa(.a(a[i]),.b(b[i]),.cin(cin[i]),.approx_en(1'b0),.sum(sum[i]),.cout(cout[i]));
+Binary file ./dve.daidir/debug_dump/vir.sdb matches
+Binary file ./dve.daidir/pcc.sdb matches
+./dve.daidir/cc/cc_bcode.db:sid full_adder
+Binary file ./dve.daidir/vcselab_misc_mnmn.db matches
+./dve.daidir/cgname.json:    "full_adder": [
+./dve.daidir/cgname.json:        "full_adder",
+Binary file ./dve.daidir/tt.sdb matches
+Binary file ./dve.daidir/_24675_archive_1.so matches
+Binary file ./dve.daidir/_31312_archive_1.so matches
+Binary file ./csrc/checksum matches
+./csrc/cginfo.json:        "full_adder": {
+./csrc/cginfo.json:                "mod": "full_adder",
+./csrc/cginfo.json:        "full_adder": [
+./csrc/cginfo.json:            "full_adder",
+./csrc/cginfo.json:        "full_adder",
+./csrc/cginfo.json:        "full_adder",
+Binary file ./csrc/_24675_archive_1.so matches
+Binary file ./csrc/archive.9/_31312_archive_1.a matches
+./csrc/_prev_cginfo.json:        "full_adder": {
+./csrc/_prev_cginfo.json:                "mod": "full_adder",
+./csrc/_prev_cginfo.json:        "full_adder": [
+./csrc/_prev_cginfo.json:            "full_adder",
+./csrc/_prev_cginfo.json:        "full_adder",
+./csrc/cgproc.31312.json:            "mod": "full_adder",
+./csrc/cgproc.31312.json:        "full_adder": {
+Binary file ./csrc/_25471_archive_1.so matches
+Binary file ./csrc/_prev_archive_1.so matches
+Binary file ./csrc/_31312_archive_1.so matches
+Binary file ./simv.daidir/pcc.sdb matches
+Binary file ./simv.daidir/vcselab_misc_mnmn.db matches
+./simv.daidir/cgname.json:    "full_adder": [
+./simv.daidir/cgname.json:        "full_adder",
+Binary file ./simv.daidir/_25471_archive_1.so matches
+Binary file ./simv.daidir/_prev_archive_1.so matches
+./fa_nbits.v:	full_adder f0 [SIZE:0] (.a(a_ext),.b(b_ext),.cin({c_internal, cin}),.approx_en(approx_en_ext),.sum(sum),.cout({cout, c_internal}));
+./full_adder.v:module full_adder(
+./full_adder.v:endmodule // full_adder
+./fa_nbits_sub.v:	full_adder f0 [SIZE-1:0] (.a(a),.b(b),.cin({c_internal, cin}),.approx_en(approx_en),.sum(sum),.cout({cout, c_internal}));

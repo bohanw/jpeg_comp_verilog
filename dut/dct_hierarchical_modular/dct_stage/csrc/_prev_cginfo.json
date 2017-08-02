@@ -1,0 +1,231 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {
+        "dff": {
+            "IWW0i_d": {
+                "bytes": 26188,
+                "mode": 4,
+                "mod": "dff",
+                "archive": "archive.2/_26060_archive_1.a",
+                "checksum": 0,
+                "out": "IWW0i_d.o"
+            }
+        },
+        "mult": {
+            "SRUFi_d": {
+                "bytes": 175257,
+                "mode": 4,
+                "mod": "mult",
+                "out": "SRUFi_d.o",
+                "archive": "archive.2/_26060_archive_1.a",
+                "checksum": 0
+            }
+        },
+        "dct_col": {
+            "qztR4_d": {
+                "bytes": 111133,
+                "mode": 4,
+                "mod": "dct_col",
+                "out": "qztR4_d.o",
+                "archive": "archive.2/_26060_archive_1.a",
+                "checksum": 0
+            }
+        },
+        "csa_eight": {
+            "fZMzr_d": {
+                "bytes": 97587,
+                "mode": 4,
+                "mod": "csa_eight",
+                "out": "fZMzr_d.o",
+                "archive": "archive.2/_26060_archive_1.a",
+                "checksum": 0
+            }
+        },
+        "comp_three_two_0001": {
+            "rt4mg_d": {
+                "bytes": 21300,
+                "mode": 4,
+                "mod": "comp_three_two_0001",
+                "out": "rt4mg_d.o",
+                "archive": "archive.2/_26060_archive_1.a",
+                "checksum": 0
+            }
+        },
+        "dut": {
+            "qKwL8_d": {
+                "bytes": 19299,
+                "mode": 4,
+                "mod": "dut",
+                "out": "qKwL8_d.o",
+                "archive": "archive.2/_26060_archive_1.a",
+                "checksum": 0
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "bytes": 39895,
+                "mode": 4,
+                "mod": "std",
+                "archive": "archive.2/_26060_archive_1.a",
+                "checksum": 0,
+                "out": "reYIK_d.o"
+            }
+        },
+        "full_adder": {
+            "BEdzp_d": {
+                "bytes": 10111,
+                "mode": 4,
+                "mod": "full_adder",
+                "archive": "archive.2/_26060_archive_1.a",
+                "checksum": 0,
+                "out": "BEdzp_d.o"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7387,
+                "mode": 4,
+                "mod": "...MASTER...",
+                "checksum": 0,
+                "out": "objs/amcQw_d.o"
+            }
+        }
+    },
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "dut": [
+            "dut",
+            "qKwL8",
+            "module"
+        ],
+        "comp_three_two_0001": [
+            "comp_three_two_0001",
+            "rt4mg",
+            "module"
+        ],
+        "dct_col": [
+            "dct_col",
+            "qztR4",
+            "module"
+        ],
+        "csa_eight": [
+            "csa_eight",
+            "fZMzr",
+            "module"
+        ],
+        "dff": [
+            "dff",
+            "IWW0i",
+            "module"
+        ],
+        "mult": [
+            "mult",
+            "SRUFi",
+            "module"
+        ],
+        "full_adder": [
+            "full_adder",
+            "BEdzp",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "CompileStrategy": "fullobj",
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 61062
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "dut",
+        "dut",
+        "dct_col",
+        "dct_col",
+        "dff",
+        "dff",
+        "mult",
+        "mult",
+        "full_adder",
+        "full_adder",
+        "comp_three_two_0001",
+        "comp_three_two_0001",
+        "csa_eight",
+        "csa_eight"
+    ],
+    "stat": {
+        "mopSpeed": 298990.47019284527,
+        "ru_self_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.14737900000000001,
+            "ru_stime_sec": 0.029073999999999999,
+            "ru_maxrss_kb": 65664,
+            "ru_minflt": 15689,
+            "ru_nvcsw": 136,
+            "ru_nivcsw": 46
+        },
+        "ru_childs_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.00073899999999999997,
+            "ru_stime_sec": 0.0014779999999999999,
+            "ru_maxrss_kb": 23032,
+            "ru_minflt": 602,
+            "ru_nvcsw": 2,
+            "ru_nivcsw": 2
+        },
+        "ru_childs_cgstart": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "quadSpeed": 92271.409935932461,
+        "nMops": 46528,
+        "ru_self_end": {
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.30299599999999999,
+            "ru_stime_sec": 0.036481,
+            "ru_maxrss_kb": 75204,
+            "ru_minflt": 19736,
+            "ru_nvcsw": 210,
+            "ru_nivcsw": 68
+        },
+        "nQuads": 14359,
+        "totalObjSize": 608904,
+        "mop/quad": 3.2403370708266594,
+        "Frontend(%)": 48.640576113216021,
+        "outputSizePerQuad": 42.0,
+        "CodeGen(%)": 51.359423886783979
+    },
+    "CurCompileUdps": {},
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.26060.json"
+    ],
+    "Misc": {
+        "archive_dir": "archive.2",
+        "cwd": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage",
+        "daidir": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/simv.daidir",
+        "csrc": "csrc",
+        "csrc_abs": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/csrc",
+        "default_output_dir": "csrc",
+        "daidir_abs": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/simv.daidir"
+    },
+    "CompileStatus": "Successful"
+}

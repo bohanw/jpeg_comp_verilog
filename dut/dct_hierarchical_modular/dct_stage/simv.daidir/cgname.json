@@ -1,0 +1,47 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "csa_eight": [
+        "csa_eight",
+        "fZMzr",
+        "module"
+    ],
+    "dff": [
+        "dff",
+        "IWW0i",
+        "module"
+    ],
+    "dut": [
+        "dut",
+        "qKwL8",
+        "module"
+    ],
+    "dct_col": [
+        "dct_col",
+        "qztR4",
+        "module"
+    ],
+    "mult": [
+        "mult",
+        "SRUFi",
+        "module"
+    ],
+    "full_adder": [
+        "full_adder",
+        "BEdzp",
+        "module"
+    ],
+    "comp_three_two_0001": [
+        "comp_three_two_0001",
+        "rt4mg",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ]
+}

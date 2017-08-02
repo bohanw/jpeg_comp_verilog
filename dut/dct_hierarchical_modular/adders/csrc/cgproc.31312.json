@@ -1,0 +1,103 @@
+{
+    "CompUnits": {
+        "BEdzp_d": {
+            "archive": "archive.9/_31312_archive_1.a",
+            "mod": "full_adder",
+            "bytes": 9945,
+            "out": "BEdzp_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "bytes": 7945,
+            "out": "objs/amcQw_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "hjguG_d": {
+            "archive": "archive.9/_31312_archive_1.a",
+            "mod": "fa_nbits_sub",
+            "bytes": 14616,
+            "out": "hjguG_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "reYIK_d": {
+            "archive": "archive.9/_31312_archive_1.a",
+            "mod": "std",
+            "bytes": 40087,
+            "out": "reYIK_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "qKwL8_d": {
+            "archive": "archive.9/_31312_archive_1.a",
+            "mod": "dut",
+            "bytes": 139339,
+            "out": "qKwL8_d.o",
+            "mode": 4,
+            "checksum": 0
+        },
+        "LbZUN_d": {
+            "archive": "archive.9/_31312_archive_1.a",
+            "mod": "comp_three_two_0000",
+            "bytes": 12444,
+            "out": "LbZUN_d.o",
+            "mode": 4,
+            "checksum": 0
+        }
+    },
+    "Modules": {
+        "fa_nbits_sub": {
+            "Compiled": "Yes",
+            "Compiled Times": 10
+        },
+        "...MASTER...": {},
+        "comp_three_two_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 10
+        },
+        "dut": {
+            "Compiled": "Yes",
+            "Compiled Times": 10
+        },
+        "full_adder": {
+            "Compiled": "Yes",
+            "Compiled Times": 10
+        }
+    },
+    "reusePaths": {},
+    "ObjArchives": [
+        {
+            "archive": "archive.9/_31312_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    40087
+                ],
+                [
+                    "qKwL8_d.o",
+                    139339
+                ],
+                [
+                    "LbZUN_d.o",
+                    12444
+                ],
+                [
+                    "BEdzp_d.o",
+                    9945
+                ],
+                [
+                    "hjguG_d.o",
+                    14616
+                ]
+            ],
+            "size": 216431
+        }
+    ]
+}

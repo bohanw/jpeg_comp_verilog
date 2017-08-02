@@ -1,0 +1,143 @@
+0 
+37
++define+
++lint=PCWM
++vc
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/opt/caen/vcs-2016.06/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /opt/caen/vcs-2016.06/linux64/lib/libvirsim.so /opt/caen/vcs-2016.06/linux64/lib/liberrorinf.so /opt/caen/vcs-2016.06/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/opt/caen/vcs-2016.06/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mupdate
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/opt/caen/vcs-2016.06/include
+-full64
+-gen_obj
+-line
+-o simv
+-picarchive
+-sverilog
+../adders/comp_four_two.v
+../adders/comp_three_two.v
+../adders/csa_eight.v
+../adders/fa4.v
+../adders/full_adder.v
+../mult/mult.v
+./dct_col.v
+./dff.v
+./dff_1bit.v
+/opt/caen/vcs-2016.06/linux64/bin/vcs1
+dct_col_tb.v
+85
+sysc_uni_pwd=/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage
+mraarch=linux_64
+installdir=/usr/caen/hspice-2016.06/hspice
+_LMFILES_=/usr/caen/misc/modules/mmsim/15.10.498:/usr/caen/misc/modules/cadence-ic/6.1.5.500.16:/usr/caen/misc/modules/calibre/2015.2_36.27:/usr/caen/misc/modules/synopsys-synth/2016.03-SP2:/usr/caen/misc/modules/innovus/15.21.000:/usr/caen/misc/modules/hspice/2016.06:/usr/caen/misc/modules/vcs/2016.06:/usr/caen/misc/modules/primetime/2016.06:/usr/caen/misc/modules/xa/2016.06:/afs/umich.edu/class/coe/modules/eecs627/w17
+XLIB_SKIP_ARGB_VISUALS=1
+XDG_VTNR=1
+XDG_SESSION_ID=3
+XDG_SESSION_DESKTOP=gnome-classic
+XDG_SEAT=seat0
+XDG_RUNTIME_DIR=/run/user/99485613
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/usr/share:/usr/local/share:/usr/caen/misc/menus
+XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
+XAUTHORITY=/run/gdm/auth-for-bohanw-ESBtrc/database
+WINDOWPATH=1
+VTE_VERSION=3804
+VMR_MODE_FLAG=64
+VCS_MODE_FLAG=64
+VCS_HOME=/opt/caen/vcs-2016.06
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=bohanw
+UNAME=/bin/uname
+TOOL_HOME=/opt/caen/vcs-2016.06/linux64
+TMIARCH=RH_64
+SYNOPSYS=/opt/caen/synopsys-synth-2016.03-SP2
+SW_VCS=2015.09
+SSH_AUTH_SOCK=/run/user/99485613/keyring/ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AGENT_PID=1895
+SNPS_PLATFORM=linux64
+SNPS_64=1
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/1701,unix/unix:/tmp/.ICE-unix/1701
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+QT_IM_MODULE=ibus
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+OA_UNSUPPORTED_PLAT=linux_rhel40_gcc44x
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/caen/misc/modules:/afs/umich.edu/class/coe/modules
+MGLS_LICENSE_FILE=/usr/caen/calibre-2015.2_36.27/license.dat
+MGC_HOME=/usr/caen/calibre-2015.2_36.27
+MFLAGS=
+MAKELEVEL=1
+MAKEFLAGS=
+LOADEDMODULES=mmsim/15.10.498:cadence-ic/6.1.5.500.16:calibre/2015.2_36.27:synopsys-synth/2016.03-SP2:innovus/15.21.000:hspice/2016.06:vcs/2016.06:primetime/2016.06:xa/2016.06:eecs627/w17
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KRB5CCNAME=FILE:/tmp/krb5cc_99485613_i2YqLf
+KDEDIRS=/usr
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+ICEAUTHORITY=/run/user/99485613/iceauthority
+HSP_HOME=/usr/caen/hspice-2016.06/hspice
+HSP_GCC_VERSION=4.8.3
+HSP_GCC=/usr/caen/hspice-2016.06/hspice/GNU/linux64/gcc-4.8.3/bin/gcc -m64
+HISTCONTROL=ignoredups
+GTK_IM_MODULE=ibus
+GPG_AGENT_INFO=/run/user/99485613/keyring/gpg:0:1
+GNOME_SHELL_SESSION_MODE=classic
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US.UTF-8
+GDMSESSION=gnome-classic
+DESKTOP_SESSION=gnome-classic
+DD_DONT_DO_OS_LOCKS=SET
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-sm2L9isWA1,guid=f5b9d6f8000fbf0433dd0a3858cd9e7a
+CMIARCH=RH_64
+CLS_CDSD_COMPATIBILITY_LOCKING=NO
+CDS_VERSION=IC6
+CDS_Netlisting_Mode=Analog
+CDS_LOAD_ENV=CSF
+CDS_LIC_FILE=/usr/caen/innovus-15.21.000/share/license/license.dat
+CDS_INSTALL_DIR=/usr/caen/ic-6.1.5.500.16/tools/dfII
+CDS_AUTO_64BIT=ALL
+CDSHOME=/usr/caen/ic-6.1.5.500.16
+CDS=/usr/caen/ic-6.1.5.500.16
+CALIBRE_HOME=/usr/caen/calibre-2015.2_36.27
+BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
+ARCH=linux64
+0
+10
+1489500072 ../adders/csa_eight.v
+1489520103 ../adders/comp_three_two.v
+1489522158 ../adders/comp_four_two.v
+1489503131 ../adders/full_adder.v
+1489429785 ../adders/fa4.v
+1489429784 ../mult/mult.v
+1489499584 ./dff_1bit.v
+1489551969 ./dff.v
+1489890945 ./dct_col.v
+1489888413 dct_col_tb.v
+4
+0 
+1464147802 /opt/caen/vcs-2016.06/linux64/lib/libvirsim.so
+1464147272 /opt/caen/vcs-2016.06/linux64/lib/liberrorinf.so
+1464147248 /opt/caen/vcs-2016.06/linux64/lib/libsnpsmalloc.so
+1489891034 simv.daidir

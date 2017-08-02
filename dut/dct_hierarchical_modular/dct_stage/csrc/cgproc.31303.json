@@ -1,0 +1,68 @@
+{
+    "reusePaths": {
+        "qKwL8_d": {
+            "icPath": "csrc"
+        },
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "qztR4_d": {
+            "icPath": "csrc"
+        },
+        "reYIK_d": {
+            "icPath": "csrc"
+        },
+        "IWW0i_d": {
+            "icPath": "csrc"
+        },
+        "BEdzp_d": {
+            "icPath": "csrc"
+        },
+        "SRUFi_d": {
+            "icPath": "csrc"
+        },
+        "rt4mg_d": {
+            "icPath": "csrc"
+        },
+        "fZMzr_d": {
+            "icPath": "csrc"
+        }
+    },
+    "Modules": {
+        "dct_col": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "...MASTER...": {},
+        "csa_eight": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "dff": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "dut": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "mult": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "full_adder": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "comp_three_two_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        }
+    },
+    "CompUnits": {},
+    "ObjArchives": []
+}

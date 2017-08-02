@@ -1,0 +1,169 @@
+ucliGUI::start /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dve -ucligui +vc +define+ +lint=PCWM +memcbk
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD9
+set ::dve_fid VPD9
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpmVIlsQ
+synUtils::sendTool -active {_icl_start_rpc -version "L-2016.06_Full64" -sync_file /tmp/vcs_dve_rpc.bohanw.17379}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.bohanw.17379}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+# Begin_DVE_Session_Save_Info
+# DVE restart session
+# Saved on Thu Mar 16 16:49:37 2017
+# Designs open: 1
+#   Sim: /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/dve
+# Toplevel windows open: 2
+# 	TopLevel.1
+# 	TopLevel.2
+#   Source.1: dut
+#   Wave.1: 19 signals
+#   Group count = 13
+#   Group Group1 signal count = 10
+#   Group col0 signal count = 16
+#   Group col1 signal count = 19
+#   Group Group2 signal count = 9
+#   Group Group3 signal count = 1
+#   Group Group4 signal count = 3
+#   Group Group5 signal count = 0
+#   Group i00 signal count = 32
+#   Group Group6 signal count = 2
+#   Group Group7 signal count = 7
+# End_DVE_Session_Save_Info
+# DVE version: L-2016.06_Full64
+# DVE build date: May 24 2016 21:01:02
+#<Session mode="Restart" path=".restartSimSession.tcl" type="Debug">
+# Application preferences
+#<WindowLayout>
+# DVE top-level session
+# Create and position top-level window: TopLevel.1
+set TopLevel.1 TopLevel.1
+# Docked window settings
+set HSPane.1 HSPane.1
+set Hier.1 Hier.1
+set DLPane.1 DLPane.1
+set Data.1 Data.1
+set Console.1 Console.1
+# MDI window settings
+set Source.1 Source.1
+# End MDI window settings
+# Create and position top-level window: TopLevel.2
+set TopLevel.2 TopLevel.2
+# Docked window settings
+# MDI window settings
+set Wave.1 Wave.1
+# End MDI window settings
+#</WindowLayout>
+#<Database>
+#</Database>
+# DVE Global setting session:
+# Global: Breakpoints
+# Global: Bus
+# Global: Expressions
+# Global: Signal Time Shift
+# Global: Signal Compare
+# Global: Signal Groups
+synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[0]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {dut.d0.d2.col0.i00.c0} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {dut.d0.d2.col0} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {dut.d0.d2.col1} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[7]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[2]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[9]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.c0.c1.genblk1[7].genblk1.fa}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[15]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d1.col0[0]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[4]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d1.col0[7]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d1.col0[0].i00}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d1.col0[0].i01}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[1]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {dut.d0.d2} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[8]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.f1.f0[3]}} -scope "." -depth 1 -fid VPD9
+synopsys::dump -add {{dut.d0.d2.col0.i00.c0.c1.genblk1[9].genblk1.fa}} -scope "." -depth 1 -fid VPD9
+set _session_group_77 Group1
+set Group1 "$_session_group_77"
+set _session_group_78 $_session_group_77|
+append _session_group_78 {col0[7]}
+set {Group1|col0[7]} "$_session_group_78"
+synopsys::dump -add {{dut.d0.d1.col0[7].dct_coeff}} -aggregates  -fid VPD9
+set _session_group_79 col0
+set col0 "$_session_group_79"
+synopsys::dump -add {dut.d0.d2.col0.dct_coeff} -aggregates  -fid VPD9
+set _session_group_80 col1
+set col1 "$_session_group_80"
+synopsys::dump -add {dut.d0.d2.col1.dct_coeff} -aggregates  -fid VPD9
+set _session_group_81 Group2
+set Group2 "$_session_group_81"
+set _session_group_82 Group3
+set Group3 "$_session_group_82"
+set _session_group_83 Group4
+set Group4 "$_session_group_83"
+set _session_group_84 Group5
+set Group5 "$_session_group_84"
+set _session_group_85 i00
+set i00 "$_session_group_85"
+synopsys::dump -add {dut.d0.d2.col0.i00.dct_coeff} -aggregates  -fid VPD9
+set _session_group_86 Group6
+set Group6 "$_session_group_86"
+set _session_group_87 Group7
+set Group7 "$_session_group_87"
+set _session_group_88 $_session_group_87|
+append _session_group_88 {f0[3]}
+set {Group7|f0[3]} "$_session_group_88"
+set _session_group_89 $_session_group_88|
+append _session_group_89 {f0[8]}
+set {Group7|f0[3]|f0[8]} "$_session_group_89"
+# Global: Highlighting
+# Global: Stack
+# Post database loading setting...
+# Save global setting...
+# Wave/List view global setting
+# Close all empty TopLevel windows
+foreach __top [gui_ekki_get_window_ids -type TopLevel] {     if { [llength [gui_ekki_get_window_ids -parent $__top]] == 0} {         gui_close_window -window $__top     } }
+# DVE View/pane content session:
+# Hier 'Hier.1'
+catch {gui_list_expand -id ${Hier.1} dut}
+catch {gui_list_expand -id ${Hier.1} dut.d0}
+catch {gui_list_expand -id ${Hier.1} dut.d0.d2}
+catch {gui_list_expand -id ${Hier.1} dut.d0.d2.col0}
+catch {gui_list_expand -id ${Hier.1} dut.d0.d2.col0.i00}
+catch {gui_list_expand -id ${Hier.1} dut.d0.d2.col0.i00.f1}
+catch {gui_list_select -id ${Hier.1} {{dut.d0.d2.col0.i00.f1.f0[15]}}}
+# Data 'Data.1'
+catch { gui_list_select -id ${Data.1} {{dut.d0.d2.col0.i00.f1.f0[15].approx_en} }}
+# Source 'Source.1'
+# View 'Wave.1'
+set groupExD [gui_get_pref_value -category Wave -key exclusiveSG]
+set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
+set origGroupCreationState [gui_list_create_group_when_add -wave]
+if {$origGroupCreationState} { 	gui_list_create_group_when_add -wave -enable }
+if { $groupExD } {  gui_msg_report -code DVWW028 }
+# Restore toplevel window zorder
+# The toplevel window could be closed if it has no view/pane
+if {[gui_exist_window -window ${TopLevel.1}]} { 	gui_set_active_window -window ${TopLevel.1} 	gui_set_active_window -window ${Source.1} 	gui_set_active_window -window ${DLPane.1} }
+if {[gui_exist_window -window ${TopLevel.2}]} { 	gui_set_active_window -window ${TopLevel.2} 	gui_set_active_window -window ${Wave.1} }
+#</Session>
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

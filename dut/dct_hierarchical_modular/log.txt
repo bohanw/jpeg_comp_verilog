@@ -1,0 +1,32 @@
+2/15
+TODO:
+
+determine "sum" bidwidth and how to instantiate 1-bit adder cells
+
+parateraize the DCT dimensions
+	INPUT width
+	output width function of input width
+
+
+Continue on compressors 
+
+
+2.24
+
+DCT output(16 bits ) vs Quantization input (11 bits) mismatch
+
+
+3/1
+TODO:
+dct_en signal
+
+DCT output(16 bits ) vs Quantization input (11 bits) mismatch
+	Refernece JPEG verilog
+Toplevel simulation
+	DUT
+	functional bugs
+	image reconstruction
+	approx control
+
+compartment (Sepearte comb and seq blocks)
+level converting FF

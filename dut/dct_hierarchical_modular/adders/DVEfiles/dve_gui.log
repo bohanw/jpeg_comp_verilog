@@ -1,0 +1,11 @@
+Chronologic VCS simulator copyright 1991-2016
+Contains Synopsys proprietary information.
+Compiler version L-2016.06_Full64; Runtime version L-2016.06_Full64;  Mar  7 19:14 2017
+VCD+ Writer L-2016.06_Full64 Copyright (c) 1991-2016 by Synopsys Inc.
+The design has assertions or cover properties.
+The assertion browser can be used to view them. Click on the assertion toolbar button or use the menu 'Window->Panes->Assertion' to open it.
+The file '/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical/adders/inter.vpd' was opened successfully.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0
+CPU Time:      0.040 seconds;       Data structure size:   0.0Mb
+Tue Mar  7 19:50:08 2017

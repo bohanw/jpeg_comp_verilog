@@ -1,0 +1,222 @@
+{
+    "MlibObjs": {},
+    "CompileStrategy": "fullobj",
+    "Misc": {
+        "daidir": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/simv.daidir",
+        "cwd": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage",
+        "csrc": "csrc",
+        "default_output_dir": "csrc",
+        "csrc_abs": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/csrc",
+        "daidir_abs": "/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/simv.daidir",
+        "archive_dir": "archive.3"
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PrevCompiledModules": {
+        "dut": {
+            "qKwL8_d": {
+                "bytes": 175397,
+                "mod": "dut",
+                "out": "qKwL8_d.o",
+                "archive": "archive.3/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "dff": {
+            "IWW0i_d": {
+                "bytes": 19874,
+                "mod": "dff",
+                "out": "IWW0i_d.o",
+                "archive": "archive.3/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "mult": {
+            "SRUFi_d": {
+                "bytes": 116843,
+                "mod": "mult",
+                "out": "SRUFi_d.o",
+                "archive": "archive.3/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "dct_col": {
+            "qztR4_d": {
+                "bytes": 68315,
+                "mod": "dct_col",
+                "out": "qztR4_d.o",
+                "archive": "archive.3/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "comp_three_two_0001": {
+            "rt4mg_d": {
+                "bytes": 22461,
+                "mod": "comp_three_two_0001",
+                "out": "rt4mg_d.o",
+                "archive": "archive.3/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "bytes": 32694,
+                "mod": "std",
+                "out": "reYIK_d.o",
+                "archive": "archive.3/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "csa_eight": {
+            "fZMzr_d": {
+                "bytes": 95468,
+                "mod": "csa_eight",
+                "out": "fZMzr_d.o",
+                "archive": "archive.3/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "full_adder": {
+            "BEdzp_d": {
+                "bytes": 9199,
+                "mod": "full_adder",
+                "out": "BEdzp_d.o",
+                "archive": "archive.3/_prev_archive_1.a",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7591,
+                "mod": "...MASTER...",
+                "out": "objs/amcQw_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        }
+    },
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "csa_eight": [
+            "csa_eight",
+            "fZMzr",
+            "module"
+        ],
+        "dff": [
+            "dff",
+            "IWW0i",
+            "module"
+        ],
+        "dut": [
+            "dut",
+            "qKwL8",
+            "module"
+        ],
+        "dct_col": [
+            "dct_col",
+            "qztR4",
+            "module"
+        ],
+        "mult": [
+            "mult",
+            "SRUFi",
+            "module"
+        ],
+        "full_adder": [
+            "full_adder",
+            "BEdzp",
+            "module"
+        ],
+        "comp_three_two_0001": [
+            "comp_three_two_0001",
+            "rt4mg",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "stat": {
+        "mopSpeed": 795364.02331663796,
+        "ru_self_cgstart": {
+            "ru_minflt": 15684,
+            "ru_utime_sec": 0.149561,
+            "ru_nvcsw": 112,
+            "ru_stime_sec": 0.023085999999999999,
+            "ru_maxrss_kb": 65648,
+            "ru_majflt": 0,
+            "ru_nivcsw": 52
+        },
+        "totalObjSize": 59706,
+        "ru_childs_cgstart": {
+            "ru_minflt": 0,
+            "ru_utime_sec": 0.0,
+            "ru_nvcsw": 0,
+            "ru_stime_sec": 0.0,
+            "ru_maxrss_kb": 0,
+            "ru_majflt": 0,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_minflt": 19315,
+            "ru_utime_sec": 0.20805999999999999,
+            "ru_nvcsw": 145,
+            "ru_stime_sec": 0.038639,
+            "ru_maxrss_kb": 73996,
+            "ru_majflt": 0,
+            "ru_nivcsw": 62
+        },
+        "outputSizePerQuad": 4.0,
+        "nMops": 46528,
+        "nQuads": 14359,
+        "ru_childs_end": {
+            "ru_minflt": 603,
+            "ru_utime_sec": 0.0010560000000000001,
+            "ru_nvcsw": 2,
+            "ru_stime_sec": 0.0010560000000000001,
+            "ru_maxrss_kb": 22988,
+            "ru_majflt": 0,
+            "ru_nivcsw": 2
+        },
+        "Frontend(%)": 71.883591271748529,
+        "quadSpeed": 245457.18730234707,
+        "mop/quad": 3.2403370708266594,
+        "CodeGen(%)": 28.116408728251464
+    },
+    "CurCompileModules": [
+        "...MASTER...",
+        "std",
+        "dut",
+        "dct_col",
+        "dff",
+        "mult",
+        "full_adder",
+        "comp_three_two_0001",
+        "csa_eight"
+    ],
+    "CurCompileUdps": {},
+    "CompileProcesses": [
+        "cgproc.31303.json"
+    ],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 59706
+    },
+    "PEModules": [],
+    "CompileStatus": "Successful"
+}

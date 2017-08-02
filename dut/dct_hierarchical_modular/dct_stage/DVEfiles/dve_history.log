@@ -1,0 +1,262 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_sessions -value {{gui_load_session -ignore_errors -file /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical_modular/dct_stage/session.inter.vpd.tcl_total.tcl -ignore_errors} {gui_load_session -ignore_errors -file /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dct_hierarchical_modular/dct_stage/session.inter.vpd.tcl_total.tcl -ignore_errors} {gui_load_session -ignore_errors -file /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_sim_cp/session.inter.vpd.tcl_dct_corret.tcl} {gui_load_session -ignore_errors -file /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_sim_cp/session.inter.vpd.tcl -ignore_errors} {gui_load_session -ignore_errors -file /afs/umich.edu/class/eecs627/w17/group5/PROJECT/jpeg_verilog/reference/jpegencode/trunk/session.inter.vpd.tcl2.tcl -ignore_errors}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1300
+gui_set_state_value -category Layout -key child_console_size_y -value 395
+gui_set_state_value -category Layout -key child_data_coltype -value 135
+gui_set_state_value -category Layout -key child_data_colvalue -value 83
+gui_set_state_value -category Layout -key child_data_colvariable -value 258
+gui_set_state_value -category Layout -key child_data_size_x -value 350
+gui_set_state_value -category Layout -key child_data_size_y -value 794
+gui_set_state_value -category Layout -key child_driver_size_x -value 1092
+gui_set_state_value -category Layout -key child_driver_size_y -value 416
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 293
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 113
+gui_set_state_value -category Layout -key child_hier_size_x -value 344
+gui_set_state_value -category Layout -key child_hier_size_y -value 794
+gui_set_state_value -category Layout -key child_list_down -value 349
+gui_set_state_value -category Layout -key child_list_right -value 1799
+gui_set_state_value -category Layout -key child_list_up -value 683
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1011
+gui_set_state_value -category Layout -key child_schematic_size_y -value 84
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 609
+gui_set_state_value -category Layout -key child_source_size_y -value 789
+gui_set_state_value -category Layout -key child_wave_colname -value 180
+gui_set_state_value -category Layout -key child_wave_colvalue -value 155
+gui_set_state_value -category Layout -key child_wave_left -value 338
+gui_set_state_value -category Layout -key child_wave_right -value 825
+gui_set_state_value -category Layout -key main_pos_x -value 2968
+gui_set_state_value -category Layout -key main_pos_y -value 102
+gui_set_state_value -category Layout -key main_size_x -value 4268
+gui_set_state_value -category Layout -key main_size_y -value 1390
+gui_set_state_value -category Layout -key stand_list_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_list_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_list_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_list_child_size_x -value 1959
+gui_set_state_value -category Layout -key stand_list_child_size_y -value 1062
+gui_set_state_value -category Layout -key stand_list_top_pos_x -value 503
+gui_set_state_value -category Layout -key stand_list_top_pos_y -value 145
+gui_set_state_value -category Layout -key stand_list_top_size_x -value 2457
+gui_set_state_value -category Layout -key stand_list_top_size_y -value 1311
+gui_set_state_value -category Layout -key stand_schematic_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_schematic_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_schematic_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_schematic_child_size_x -value 1011
+gui_set_state_value -category Layout -key stand_schematic_child_size_y -value 84
+gui_set_state_value -category Layout -key stand_source_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_source_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_source_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_source_child_size_x -value 2564
+gui_set_state_value -category Layout -key stand_source_child_size_y -value 1258
+gui_set_state_value -category Layout -key stand_source_top_pos_x -value 0
+gui_set_state_value -category Layout -key stand_source_top_pos_y -value 39
+gui_set_state_value -category Layout -key stand_source_top_size_x -value 2559
+gui_set_state_value -category Layout -key stand_source_top_size_y -value 1377
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1173
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 888
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 2659
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 64
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 3827
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 1056
+gui_set_state_value -category SaveSession -key single_view_name -value Wave.1
+gui_set_state_value -category SaveSession -key toplevel_window_name -value TopLevel.2
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_left_dock|DockWnd2|DLPane.1|pages|Data.1|hbox|textfilter -value_type string -value {*wr wr *id_ex_wr *dest*}
+gui_create_state_key -category Widget_History -key TopLevel.1|qt_left_dock|DockWnd4|DLPane.1|pages|Data.1|hbox|textfilter -value_type string -value {*predict* *branch* {}}
+gui_create_state_key -category Widget_History -key TopLevel.2|EkTopVbox|wndWorkspace|qt_workspacechild2|Wave.1|left|filterVBox|controlHBox|unnamed -value_type string -value *head*
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_VPDCombo} -value_type string -value inter.vpd
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_argsCombo} -value_type string -value {{-ucligui +vc +define+ +lint=PCWM +memcbk} {+vc +define+ +lint=PCWM +memcbk} {-ucligui } {+vc +lint=TFIPC-L +lint=PCWM +memcbk} {-ucligui +vc +memcbk}}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_curDirCombo} -value_type string -value {/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical_modular/dct_stage /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_sim_cp /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical/dct_stage /afs/umich.edu/class/eecs627/w17/group5/PROJECT/jpeg_verilog/verilog/dct_hierarchical/dct_stage /afs/umich.edu/class/eecs627/w17/group5/PROJECT/jpeg_verilog/verilog/dct_hierarchical/adders}
+gui_create_state_key -category Widget_History -key {dlgSimSetup|m_setupTab|tab pages|SimTab|m_exeCombo} -value_type string -value {/afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical_modular/dct_stage/dve dve /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_sim_cp/dve /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_verilog/dut/dct_hierarchical/dct_stage/dve /afs/umich.edu/class/eecs627/w17/group5/PROJECT/jpeg_verilog/verilog/dct_hierarchical/dct_stage/dve}
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe dve -args {-ucligui  +vc +define+ +lint=PCWM +memcbk} -dir .
+set DIALOGS::LOADFILEDIR [file dirname /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/session.inter.vpd.tcl_total.tcl]; gui_load_session -ignore_errors -file /afs/umich.edu/class/eecs627/w17/group5/PROJECT/gp5_syn/dut/dct_hierarchical_modular/dct_stage/session.inter.vpd.tcl_total.tcl
+gui_marker_move -id  Wave.1 C1 2233
+gui_sim_continue  
+gui_wv_zoom_timerange -id  Wave.1 3389 15153
+gui_marker_move -id  Wave.1 C1 7298
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 0 1188
+gui_close_window -window TopLevel.2
+gui_list_expand -id  Hier.1   dut
+gui_list_expand -id  Hier.1   dut.d0
+gui_list_expand -id  Hier.1   dut.d0.d1
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d1.col0[0]} -current_item_type Scope  -selected  { {dut.d0.d1.col0[0]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d1.col0[0].APPROX_BITS[31:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d1.col0[0].APPROX_BITS[31:0]} } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 597
+gui_wv_zoom_timerange -id  Wave.1 0 445
+gui_wv_zoom_timerange -id  Wave.1 0 597
+gui_list_add  -id  Wave.1   -after {dut.d0.d1.col0[0].APPROX_BITS[31:0]} {{dut.d0.d1.col0[0].APPROX_BITS[31:0]}} 
+gui_list_select -id Wave.1 -selected  { {dut.d0.d1.col0[0].APPROX_BITS[31:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {dut.d0.d1.col0[0].APPROX_BITS[31:0]}   }
+gui_marker_move -id  Wave.1 C1 114
+gui_sim_restart
+gui_sim_continue  
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d1.col0[1]} -current_item_type Scope  -selected  { {dut.d0.d1.col0[1]}   }
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d1.col0[0]} -current_item_type Scope  -selected  { {dut.d0.d1.col0[0]}   }
+gui_list_expand -id  Hier.1   {dut.d0.d1.col0[0]}
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d1.col0[0].dff7} -current_item_type Scope  -selected  { {dut.d0.d1.col0[0].dff7}   }
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d1.col0[0]} -current_item_type Scope  -selected  { {dut.d0.d1.col0[0]}   }
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d1.col0[0].i00} -current_item_type Scope  -selected  { {dut.d0.d1.col0[0].i00}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d1.col0[0].i00.approx_en_sub[13:0]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d1.col0[0].i00.approx_en_add[12:0]}   }
+gui_sg_create  Group4 
+gui_list_add_group -id  Wave.1   {Group4} 
+gui_list_add  -id  Wave.1   -after Group4 {{dut.d0.d1.col0[0].i00.approx_en_add[12:0]}}
+gui_list_select -id Data.1 -selected  { {dut.d0.d1.col0[0].i00.approx_en_sub[13:0]}   }
+gui_list_add  -id  Wave.1   -after {dut.d0.d1.col0[0].i00.approx_en_add[12:0]} {{dut.d0.d1.col0[0].i00.approx_en_sub[13:0]}} 
+gui_sim_restart
+gui_marker_move -id  Wave.1 C1 5852
+gui_sim_continue  
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d1.col0[0].i01} -current_item_type Scope  -selected  { {dut.d0.d1.col0[0].i01}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d1.col0[0].i01.approx_en}   }
+gui_list_add  -id  Wave.1   -after {dut.d0.d1.col0[0].i00.approx_en_sub[13:0]} {{dut.d0.d1.col0[0].i01.approx_en}} 
+gui_list_select -id Hier.1 -current_item_name dut.d0 -current_item_type Scope  -selected  { dut.d0   }
+gui_list_select -id Data.1 -selected  { {dut.d0.approx_en[1:0]}   }
+gui_sg_create  Group5 
+gui_list_add_group -id  Wave.1   {Group5} 
+gui_list_add  -id  Wave.1   -after Group5 {{dut.d0.approx_en[1:0]}}
+gui_sim_restart
+gui_sim_continue  
+gui_list_select -id Wave.1 -selected  { {dut.d0.approx_en[1:0]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { Group5   }
+gui_list_expand -id  Hier.1   dut.d0
+gui_list_expand -id  Hier.1   dut.d0.d2
+gui_list_select -id Hier.1 -current_item_name dut.d0.d2.col0 -current_item_type Scope  -selected  { dut.d0.d2.col0   }
+gui_list_expand -id  Hier.1   dut.d0.d2.col0
+gui_list_select -id Hier.1 -current_item_name dut.d0.d2.col0.i00 -current_item_type Scope  -selected  { dut.d0.d2.col0.i00   }
+gui_sg_create i00
+gui_list_add_group -id  Wave.1   {i00} 
+gui_list_add  -id  Wave.1   -after i00 {{dut.d0.d2.col0.i00}}
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.result2[15:0]}   }
+gui_sim_restart
+gui_marker_move -id  Wave.1 C1 5799
+gui_sim_continue  
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.APPROX_BITS[31:0]}   }
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.approx_en_add[14:0]}   }
+gui_close_window -window TopLevel.2
+gui_list_expand -id  Hier.1   dut.d0.d2.col0.i00
+gui_list_expand -id  Hier.1   dut.d0.d2.col0.i00.c0
+gui_list_select -id Hier.1 -current_item_name dut.d0.d2.col0.i00.c0 -current_item_type Scope  -selected  { dut.d0.d2.col0.i00.c0   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.c0.APPROX_BITS[31:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.c0.APPROX_BITS[31:0]} } -insertionbar
+gui_wv_zoom_timerange -id  Wave.1 0 597
+gui_marker_move -id  Wave.1 C1 232
+gui_sim_restart
+gui_marker_move -id  Wave.1 C1 177
+gui_sim_continue  
+gui_zoom -window Wave.1 -full
+gui_list_select -id Data.1 -selected  { dut.d0.d2.col0.i00.c0.approx_en   }
+gui_list_add  -id  Wave.1   -after {dut.d0.d2.col0.i00.c0.APPROX_BITS[31:0]} {{dut.d0.d2.col0.i00.c0.approx_en}} 
+gui_list_expand -id  Hier.1   dut.d0.d2.col0.i00.c0
+gui_list_select -id Hier.1 -current_item_name dut.d0.d2.col0.i00.c0.c1 -current_item_type Scope  -selected  { dut.d0.d2.col0.i00.c0.c1   }
+gui_list_expand -id  Hier.1   dut.d0.d2.col0.i00.c0.c1
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa}   }
+gui_list_add  -id  Wave.1   -after dut.d0.d2.col0.i00.c0.approx_en {{dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa}} 
+gui_list_select -id Wave.1 -selected  { {Group6|genblk1[8].genblk1.fa}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { dut.d0.d2.col0.i00.c0.approx_en   }
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.c0.c1.genblk1[7].genblk1.fa} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.c0.c1.genblk1[7].genblk1.fa}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.c0.c1.genblk1[7].genblk1.fa.approx_en}   }
+gui_list_action -id  Data.1 {dut.d0.d2.col0.i00.c0.c1.genblk1[7].genblk1.fa.approx_en}
+gui_sg_create  Group7 
+gui_list_add_group -id  Wave.1   {Group7} 
+gui_list_add  -id  Wave.1   -after Group7 {{dut.d0.d2.col0.i00.c0.c1.genblk1[7].genblk1.fa.approx_en}}
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa.approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.c0.c1.genblk1[8].genblk1.fa.approx_en} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.c0.c1.genblk1[9].genblk1.fa} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.c0.c1.genblk1[9].genblk1.fa}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.c0.c1.genblk1[9].genblk1.fa.approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.c0.c1.genblk1[9].genblk1.fa.approx_en} } -insertionbar
+gui_sim_restart
+gui_marker_move -id  Wave.1 C1 1424
+gui_sim_continue  
+gui_list_collapse -id  Hier.1   dut.d0.d2.col0.i00.c0.c1
+gui_list_select -id Hier.1 -current_item_name dut.d0.d2.col0.i00.c0.c1 -current_item_type Scope  -selected  { dut.d0.d2.col0.i00.c0.c1   }
+gui_list_expand -id  Hier.1   dut.d0.d2.col0.i00.f1
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[0]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[0]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[0].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[0].approx_en} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[1]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[1]}   }
+gui_list_add -id Wave.1 -from Hier.1 { {dut.d0.d2.col0.i00.f1.f0[1]} } -insertionbar
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[0].approx_en}   }
+gui_list_select -id Wave.1 -selected  { {Group7|f0[1]}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[0].approx_en}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[1].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[1].approx_en} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[2]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[2]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[2].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[2].approx_en} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[3]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[3]}   }
+gui_list_add -id Wave.1 -from Hier.1 { {dut.d0.d2.col0.i00.f1.f0[3]} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[7]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[7]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[7].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[7].approx_en} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[8]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[8]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[8].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[8].approx_en} } -insertionbar
+gui_marker_move -id  Wave.1 C1 5138
+gui_sim_restart
+gui_marker_move -id  Wave.1 C1 5303
+gui_sim_continue  
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[3].cin}   }
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[3].cin}  {dut.d0.d2.col0.i00.f1.f0[3].approx_en}  {dut.d0.d2.col0.i00.f1.f0[3].cout}  {dut.d0.d2.col0.i00.f1.f0[3].sum}  {dut.d0.d2.col0.i00.f1.f0[3].a}  {dut.d0.d2.col0.i00.f1.f0[3].b}  {dut.d0.d2.col0.i00.f1.f0[7].approx_en}  {dut.d0.d2.col0.i00.f1.f0[8].approx_en}   }
+gui_delete_selected -id  Wave.1
+gui_list_select -id Wave.1 -selected  { {Group7|f0[3]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[3].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[3].approx_en} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[4]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[4]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[4].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[4].approx_en} } -insertionbar
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[7].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[7].approx_en} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[8]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[8]}   }
+gui_list_add -id Wave.1 -from Hier.1 { {dut.d0.d2.col0.i00.f1.f0[8]} } -insertionbar
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[9]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[9]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[9].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[9].approx_en} } -insertionbar
+gui_sim_restart
+gui_marker_move -id  Wave.1 C1 3996
+gui_sim_continue  
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[9].approx_en}   }
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[2].approx_en}   }
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[8].approx_en}   }
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[9].approx_en}   }
+gui_list_select -id Hier.1 -current_item_name {dut.d0.d2.col0.i00.f1.f0[15]} -current_item_type Scope  -selected  { {dut.d0.d2.col0.i00.f1.f0[15]}   }
+gui_list_select -id Data.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[15].approx_en}   }
+gui_list_add -id Wave.1 -from Data.1 { {dut.d0.d2.col0.i00.f1.f0[15].approx_en} } -insertionbar
+gui_sim_restart
+gui_marker_move -id  Wave.1 C1 3808
+gui_sim_continue  
+gui_list_select -id Wave.1 -selected  { {dut.d0.d2.col0.i00.f1.f0[15].approx_en}   }
+gui_close_window -window TopLevel.2
+gui_list_select -id Hier.1 -current_item_name dut.d0.d2.col0.i00.f3 -current_item_type Scope  -selected  { dut.d0.d2.col0.i00.f3   }
+gui_list_collapse -id  Hier.1   dut.d0.d2.col0.i00.f1
