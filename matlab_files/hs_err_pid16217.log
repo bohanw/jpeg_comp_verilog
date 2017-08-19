@@ -1,0 +1,1154 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f9fa905b6fa, pid=16217, tid=140322961344256
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_60-b19) (build 1.7.0_60-b19)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.60-b09 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# v  ~BufferBlob::jni_fast_GetLongField
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f9fac241000):  JavaThread "AWT-XAWT" daemon [_thread_in_native, id=16236, stack(0x00007f9f7c33c000,0x00007f9f7c43d000)]
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000000000000
+
+Registers:
+RAX=0x00007f9fb358e460, RBX=0x0000000706c09140, RCX=0x00007f9fb3fdf2e0, RDX=0x0000000000000042
+RSP=0x00007f9f7c43b858, RBP=0x00007f9f7c43b880, RSI=0x0000000000000000, RDI=0x00007f9fac2411e8
+R8 =0x0000000000000003, R9 =0x0000000000000000, R10=0x0000000000000004, R11=0x00007f9f7d4635d0
+R12=0x00007f9fac2411e8, R13=0x0000000000000000, R14=0x00007f9f7dbc5fe0, R15=0x00007f9fac241000
+RIP=0x00007f9fa905b6fa, EFLAGS=0x0000000000010246, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f9f7c43b858)
+0x00007f9f7c43b858:   00007f9f7d990801 0000000706c09140
+0x00007f9f7c43b868:   00007f9f48337ea0 0000000706c09140
+0x00007f9f7c43b878:   00007f9f7c43b970 0000000000000000
+0x00007f9f7c43b888:   00007f9f7d463628 0000000706c09140
+0x00007f9f7c43b898:   00007f9f7c43b8c0 0000000000000000
+0x00007f9f7c43b8a8:   00007f9f7d45ade3 0000000706c09140
+0x00007f9f7c43b8b8:   00007f9f7d98668f 00007f9f7c43b938
+0x00007f9f7c43b8c8:   00007f9fa9012d98 00007f9f7c43b948
+0x00007f9f7c43b8d8:   00007f9fa9006233 0000000000000000
+0x00007f9f7c43b8e8:   00000007ae97ee58 0000000000000000
+0x00007f9f7c43b8f8:   00007f9f7c43b8f8 0000000000000000
+0x00007f9f7c43b908:   00007f9f7c43b970 0000000706c0f1c0
+0x00007f9f7c43b918:   0000000000000000 0000000706c09140
+0x00007f9f7c43b928:   0000000000000000 00007f9f7c43b980
+0x00007f9f7c43b938:   00000000e0d1113e 00007f9fa90bba88
+0x00007f9f7c43b948:   00000007ae97fa68 00007f9fa900ecc0
+0x00007f9f7c43b958:   0000000000000000 00000007ae97ee58
+0x00007f9f7c43b968:   00007f9f50002dc0 00000007ae97e3a8
+0x00007f9f7c43b978:   00007f9fa90bba88 00000007ae990208
+0x00007f9f7c43b988:   00007f9f00000000 00000007aeaf5e38
+0x00007f9f7c43b998:   0000000000000000 00000007aeaf5e38
+0x00007f9f7c43b9a8:   0000000000000000 0000000000000000
+0x00007f9f7c43b9b8:   0000000000000000 00007f9f7c43ba20
+0x00007f9f7c43b9c8:   00007f9fa9006058 0000000000000000
+0x00007f9f7c43b9d8:   00000007ae990208 00007f9f7c43b9e0
+0x00007f9f7c43b9e8:   0000000706bce72d 00007f9f7c43ba30
+0x00007f9f7c43b9f8:   0000000706beb080 0000000000000000
+0x00007f9f7c43ba08:   0000000706bce738 00007f9f7c43b9d0
+0x00007f9f7c43ba18:   00007f9f7c43ba30 00007f9f7c43ba78
+0x00007f9f7c43ba28:   00007f9fa9006706 00000007ae990208
+0x00007f9f7c43ba38:   00007f9f7c43ba38 00000007068323fb
+0x00007f9f7c43ba48:   00007f9f7c43ba88 00000007068ae580 
+
+Instructions: (pc=0x00007f9fa905b6fa)
+0x00007f9fa905b6da:   00 00 00 00 00 00 44 8b 15 e1 67 56 0a 4c 8b ce
+0x00007f9fa905b6ea:   41 f6 c2 01 0f 85 2e 00 00 00 4d 33 ca 4d 33 ca
+0x00007f9fa905b6fa:   4d 8b 09 4c 8b da 49 c1 eb 02 4b 8b 04 19 49 bb
+0x00007f9fa905b70a:   c8 1e 5c b3 9f 7f 00 00 4c 33 d8 4c 33 d8 45 3b 
+
+Register to memory mapping:
+
+RAX=0x00007f9fb358e460: <offset 0xe16460> in /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so at 0x00007f9fb2778000
+RBX=0x0000000706c09140 is an oop
+{method} 
+ - klass: {other class}
+RCX=0x00007f9fb3fdf2e0: <offset 0x2172e0> in /lib64/libpthread.so.0 at 0x00007f9fb3dc8000
+RDX=0x0000000000000042 is an unknown value
+RSP=0x00007f9f7c43b858 is pointing into the stack for thread: 0x00007f9fac241000
+RBP=0x00007f9f7c43b880 is pointing into the stack for thread: 0x00007f9fac241000
+RSI=0x0000000000000000 is an unknown value
+RDI=0x00007f9fac2411e8 is an unknown value
+R8 =0x0000000000000003 is an unknown value
+R9 =0x0000000000000000 is an unknown value
+R10=0x0000000000000004 is an unknown value
+R11=0x00007f9f7d4635d0: _XimServerDestroy+0 in /lib64/libX11.so.6 at 0x00007f9f7d3fa000
+R12=0x00007f9fac2411e8 is an unknown value
+R13=0x0000000000000000 is an unknown value
+R14=0x00007f9f7dbc5fe0: <offset 0x253fe0> in /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/xawt/libmawt.so at 0x00007f9f7d972000
+R15=0x00007f9fac241000 is a thread
+
+
+Stack: [0x00007f9f7c33c000,0x00007f9f7c43d000],  sp=0x00007f9f7c43b858,  free space=1022k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+v  ~BufferBlob::jni_fast_GetLongField
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  sun.awt.X11.XlibWrapper.XFilterEvent(JJ)Z+0
+J 83% C2 sun.awt.X11.XToolkit.run(Z)V (410 bytes) @ 0x00007f9fa90bba88 [0x00007f9fa90bb200+0x888]
+j  sun.awt.X11.XToolkit.run()V+5
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007f9f68005800 JavaThread "SIGHUP handler" daemon [_thread_blocked, id=10423, stack(0x00007f9f2bcfd000,0x00007f9f2bdfe000)]
+  0x00007f9f68003800 JavaThread "SIGHUP handler" daemon [_thread_blocked, id=10422, stack(0x00007f9f2bdfe000,0x00007f9f2beff000)]
+  0x00007f9f34030800 JavaThread "XToolkt-Shutdown-Thread" [_thread_blocked, id=10378, stack(0x00007f9f2beff000,0x00007f9f2c000000)]
+  0x00007f9f68002000 JavaThread "SIGHUP handler" daemon [_thread_blocked, id=10377, stack(0x00007f9f380ed000,0x00007f9f381ee000)]
+  0x00007f9f68001000 JavaThread "SIGTERM handler" daemon [_thread_blocked, id=10376, stack(0x00007f9f390cd000,0x00007f9f391ce000)]
+  0x00007f9f4829c800 JavaThread "TimerQueue" daemon [_thread_blocked, id=16241, stack(0x00007f9f386ac000,0x00007f9f387ad000)]
+  0x00007f9fac00a000 JavaThread "DestroyJavaVM" [_thread_blocked, id=16218, stack(0x00007f9fb40d4000,0x00007f9fb41d5000)]
+  0x00007f9fac244000 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=16238, stack(0x00007f9f7c13a000,0x00007f9f7c23b000)]
+  0x00007f9fac242800 JavaThread "AWT-Shutdown" [_thread_blocked, id=16237, stack(0x00007f9f7c23b000,0x00007f9f7c33c000)]
+=>0x00007f9fac241000 JavaThread "AWT-XAWT" daemon [_thread_in_native, id=16236, stack(0x00007f9f7c33c000,0x00007f9f7c43d000)]
+  0x00007f9fac22a800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=16235, stack(0x00007f9f7c876000,0x00007f9f7c977000)]
+  0x00007f9fac09d800 JavaThread "Service Thread" daemon [_thread_blocked, id=16233, stack(0x00007f9f7df9a000,0x00007f9f7e09b000)]
+  0x00007f9fac09b000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=16232, stack(0x00007f9f7e09b000,0x00007f9f7e19c000)]
+  0x00007f9fac098000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=16231, stack(0x00007f9f7e19c000,0x00007f9f7e29d000)]
+  0x00007f9fac090000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=16230, stack(0x00007f9f7e29d000,0x00007f9f7e39e000)]
+  0x00007f9fac079800 JavaThread "Finalizer" daemon [_thread_blocked, id=16229, stack(0x00007f9f7e39e000,0x00007f9f7e49f000)]
+  0x00007f9fac077800 JavaThread "Reference Handler" daemon [_thread_blocked, id=16228, stack(0x00007f9f7e49f000,0x00007f9f7e5a0000)]
+
+Other Threads:
+  0x00007f9fac073000 VMThread [stack: 0x00007f9f7e5a0000,0x00007f9f7e6a1000] [id=16227]
+  0x00007f9fac0a8800 WatcherThread [stack: 0x00007f9f7de99000,0x00007f9f7df9a000] [id=16234]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 73216K, used 21442K [0x00000007ae880000, 0x00000007b3a00000, 0x0000000800000000)
+  eden space 62976K, 34% used [0x00000007ae880000,0x00000007afd709c0,0x00000007b2600000)
+  from space 10240K, 0% used [0x00000007b3000000,0x00000007b3000000,0x00000007b3a00000)
+  to   space 10240K, 0% used [0x00000007b2600000,0x00000007b2600000,0x00000007b3000000)
+ ParOldGen       total 166400K, used 0K [0x000000070ba00000, 0x0000000715c80000, 0x00000007ae880000)
+  object space 166400K, 0% used [0x000000070ba00000,0x000000070ba00000,0x0000000715c80000)
+ PSPermGen       total 21504K, used 13465K [0x0000000706800000, 0x0000000707d00000, 0x000000070ba00000)
+  object space 21504K, 62% used [0x0000000706800000,0x0000000707526738,0x0000000707d00000)
+
+Card table byte_map: [0x00007f9fb082c000,0x00007f9fb0ff9000] byte_map_base: 0x00007f9facff8000
+
+Polling page: 0x00007f9fb4201000
+
+Code Cache  [0x00007f9fa9000000, 0x00007f9fa9270000, 0x00007f9fac000000)
+ total_blobs=586 nmethods=83 adapters=456 free_code_cache=48421Kb largest_free_block=49552512
+
+Compilation events (10 events):
+Event: 4126.864 Thread 0x00007f9fac09b000   78             sun.util.logging.PlatformLogger::isLoggable (9 bytes)
+Event: 4126.864 Thread 0x00007f9fac098000   79             sun.util.logging.PlatformLogger::isLoggable (38 bytes)
+Event: 4126.867 Thread 0x00007f9fac098000 nmethod 79 0x00007f9fa90b5c50 code [0x00007f9fa90b5da0, 0x00007f9fa90b5f18]
+Event: 4126.870 Thread 0x00007f9fac09b000 nmethod 78 0x00007f9fa90b3a10 code [0x00007f9fa90b3ba0, 0x00007f9fa90b3ed8]
+Event: 4917.826 Thread 0x00007f9fac098000   80   !         sun.awt.X11.XToolkit::callTimeoutTasks (220 bytes)
+Event: 4917.828 Thread 0x00007f9fac098000 nmethod 80 0x00007f9fa90b7690 code [0x00007f9fa90b7820, 0x00007f9fa90b7a98]
+Event: 4970.892 Thread 0x00007f9fac09b000   81   !         sun.awt.X11.XToolkit::getNextTaskTime (55 bytes)
+Event: 4970.893 Thread 0x00007f9fac09b000 nmethod 81 0x00007f9fa90b6b50 code [0x00007f9fa90b6ce0, 0x00007f9fa90b6f20]
+Event: 7203.102 Thread 0x00007f9fac098000   83 % !         sun.awt.X11.XToolkit::run @ 59 (410 bytes)
+Event: 7203.124 Thread 0x00007f9fac098000 nmethod 83% 0x00007f9fa90bac90 code [0x00007f9fa90bb200, 0x00007f9fa90bc890]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (10 events):
+Event: 0.332 Thread 0x00007f9fac244000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f9fa9082fc4 method=java.util.Properties$LineReader.readLine()I @ 62
+Event: 0.333 Thread 0x00007f9fac244000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f9fa9082fc4 method=java.util.Properties$LineReader.readLine()I @ 62
+Event: 0.427 Thread 0x00007f9fac244000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f9fa907c114 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 0.427 Thread 0x00007f9fac244000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f9fa907c114 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 0.427 Thread 0x00007f9fac244000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f9fa907c114 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 0.427 Thread 0x00007f9fac244000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f9fa907c114 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 0.436 Thread 0x00007f9fac244000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007f9fa9098888 method=java.util.Hashtable.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; @ 61
+Event: 0.438 Thread 0x00007f9fac244000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007f9fa9098888 method=java.util.Hashtable.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; @ 61
+Event: 0.438 Thread 0x00007f9fac244000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007f9fa9098888 method=java.util.Hashtable.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; @ 61
+Event: 0.438 Thread 0x00007f9fac244000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007f9fa9098888 method=java.util.Hashtable.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; @ 61
+
+Internal exceptions (10 events):
+Event: 0.460 Thread 0x00007f9fac244000 Threw 0x00000007af808e80 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0.487 Thread 0x00007f9fac244000 Threw 0x00000007af85f638 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0.487 Thread 0x00007f9fac244000 Threw 0x00000007af862f98 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0.488 Thread 0x00007f9fac244000 Threw 0x00000007af864fb0 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0.493 Thread 0x00007f9fac244000 Threw 0x00000007af881af8 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0.494 Thread 0x00007f9fac244000 Threw 0x00000007af887950 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0.495 Thread 0x00007f9fac244000 Threw 0x00000007af88d508 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0.495 Thread 0x00007f9fac244000 Threw 0x00000007af88fdc8 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0.496 Thread 0x00007f9fac244000 Threw 0x00000007af892fd8 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 0.503 Thread 0x00007f9fac244000 Threw 0x00000007af944d50 at /HUDSON/workspace/7u-2-build-linux-amd64/jdk7u60/1081/hotspot/src/share/vm/prims/jvm.cpp:1244
+
+Events (10 events):
+Event: 0.521 loading class 0x00007f9f60052920 done
+Event: 0.521 loading class 0x00007f9f60052c80 done
+Event: 0.521 loading class 0x00007f9f60053f00 done
+Event: 0.521 loading class 0x00007f9f6c032cb0 done
+Event: 4.033 Executing VM operation: EnableBiasedLocking
+Event: 4.034 Executing VM operation: EnableBiasedLocking done
+Event: 5.405 Thread 0x00007f9f481ab000 Thread exited: 0x00007f9f481ab000
+Event: 40785.057 loading class 0x00007f9f6c04a7b0
+Event: 40785.057 loading class 0x00007f9f6c04a7b0 done
+Event: 40785.068 loading class 0x00007f9fb005b020
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 fd:00 14290262                           /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/bin/java
+00600000-00601000 rw-p 00000000 fd:00 14290262                           /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/bin/java
+01383000-013a4000 rw-p 00000000 00:00 0                                  [heap]
+706800000-707d00000 rw-p 00000000 00:00 0 
+707d00000-70ba00000 rw-p 00000000 00:00 0 
+70ba00000-715c80000 rw-p 00000000 00:00 0 
+715c80000-7ae880000 rw-p 00000000 00:00 0 
+7ae880000-7b3a00000 rw-p 00000000 00:00 0 
+7b3a00000-800000000 rw-p 00000000 00:00 0 
+7f9f1c000000-7f9f1c021000 rw-p 00000000 00:00 0 
+7f9f1c021000-7f9f20000000 ---p 00000000 00:00 0 
+7f9f20000000-7f9f20021000 rw-p 00000000 00:00 0 
+7f9f20021000-7f9f24000000 ---p 00000000 00:00 0 
+7f9f24000000-7f9f24021000 rw-p 00000000 00:00 0 
+7f9f24021000-7f9f28000000 ---p 00000000 00:00 0 
+7f9f2bcfd000-7f9f2bd00000 ---p 00000000 00:00 0 
+7f9f2bd00000-7f9f2bdfe000 rwxp 00000000 00:00 0                          [stack:10423]
+7f9f2bdfe000-7f9f2be01000 ---p 00000000 00:00 0 
+7f9f2be01000-7f9f2beff000 rwxp 00000000 00:00 0                          [stack:10422]
+7f9f2beff000-7f9f2bf02000 ---p 00000000 00:00 0 
+7f9f2bf02000-7f9f2c000000 rwxp 00000000 00:00 0                          [stack:10378]
+7f9f2c000000-7f9f2c021000 rw-p 00000000 00:00 0 
+7f9f2c021000-7f9f30000000 ---p 00000000 00:00 0 
+7f9f30000000-7f9f30021000 rw-p 00000000 00:00 0 
+7f9f30021000-7f9f34000000 ---p 00000000 00:00 0 
+7f9f34000000-7f9f34033000 rw-p 00000000 00:00 0 
+7f9f34033000-7f9f38000000 ---p 00000000 00:00 0 
+7f9f380ed000-7f9f380f0000 ---p 00000000 00:00 0 
+7f9f380f0000-7f9f381ee000 rwxp 00000000 00:00 0                          [stack:10377]
+7f9f381ee000-7f9f38291000 rw-s 00000000 00:04 1474565                    /SYSV00000000 (deleted)
+7f9f38291000-7f9f382a0000 r-xp 00000000 fd:00 13508304                   /opt/caen/matlab-2016a/bin/glnxa64/libmwnativedialogs.so
+7f9f382a0000-7f9f384a0000 ---p 0000f000 fd:00 13508304                   /opt/caen/matlab-2016a/bin/glnxa64/libmwnativedialogs.so
+7f9f384a0000-7f9f384a1000 rw-p 0000f000 fd:00 13508304                   /opt/caen/matlab-2016a/bin/glnxa64/libmwnativedialogs.so
+7f9f384a1000-7f9f384ab000 r-xp 00000000 fd:00 13508778                   /opt/caen/matlab-2016a/bin/glnxa64/libnativejava.so
+7f9f384ab000-7f9f386ab000 ---p 0000a000 fd:00 13508778                   /opt/caen/matlab-2016a/bin/glnxa64/libnativejava.so
+7f9f386ab000-7f9f386ac000 rw-p 0000a000 fd:00 13508778                   /opt/caen/matlab-2016a/bin/glnxa64/libnativejava.so
+7f9f386ac000-7f9f386af000 ---p 00000000 00:00 0 
+7f9f386af000-7f9f387ad000 rwxp 00000000 00:00 0                          [stack:16241]
+7f9f387ad000-7f9f38815000 r-xp 00000000 fd:00 14290328                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libt2k.so
+7f9f38815000-7f9f38a15000 ---p 00068000 fd:00 14290328                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libt2k.so
+7f9f38a15000-7f9f38a1c000 rw-p 00068000 fd:00 14290328                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libt2k.so
+7f9f38a1c000-7f9f38a2c000 rw-p 00000000 00:00 0 
+7f9f38a2c000-7f9f38a3c000 r-xp 00000000 fd:00 14290321                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libnio.so
+7f9f38a3c000-7f9f38c3c000 ---p 00010000 fd:00 14290321                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libnio.so
+7f9f38c3c000-7f9f38c3d000 rw-p 00010000 fd:00 14290321                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libnio.so
+7f9f38c3d000-7f9f38c53000 r-xp 00000000 fd:00 14290320                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libnet.so
+7f9f38c53000-7f9f38e53000 ---p 00016000 fd:00 14290320                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libnet.so
+7f9f38e53000-7f9f38e54000 rw-p 00016000 fd:00 14290320                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libnet.so
+7f9f38e54000-7f9f38eb9000 r-xp 00000000 fd:00 14290292                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libfontmanager.so
+7f9f38eb9000-7f9f390b8000 ---p 00065000 fd:00 14290292                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libfontmanager.so
+7f9f390b8000-7f9f390bc000 rw-p 00064000 fd:00 14290292                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libfontmanager.so
+7f9f390bc000-7f9f390cd000 rw-p 00000000 00:00 0 
+7f9f390cd000-7f9f390d0000 ---p 00000000 00:00 0 
+7f9f390d0000-7f9f391ce000 rwxp 00000000 00:00 0                          [stack:10376]
+7f9f391ce000-7f9f393ce000 rw-p 00000000 00:00 0 
+7f9f393ce000-7f9f394d2000 r-xp 00000000 fd:00 14291822                   /opt/caen/matlab-2016a/sys/os/glnxa64/libiomp5.so
+7f9f394d2000-7f9f396d2000 ---p 00104000 fd:00 14291822                   /opt/caen/matlab-2016a/sys/os/glnxa64/libiomp5.so
+7f9f396d2000-7f9f396d3000 r--p 00104000 fd:00 14291822                   /opt/caen/matlab-2016a/sys/os/glnxa64/libiomp5.so
+7f9f396d3000-7f9f396de000 rw-p 00105000 fd:00 14291822                   /opt/caen/matlab-2016a/sys/os/glnxa64/libiomp5.so
+7f9f396de000-7f9f3970b000 rw-p 00000000 00:00 0 
+7f9f3970b000-7f9f39711000 r-xp 00000000 fd:00 13508323                   /opt/caen/matlab-2016a/bin/glnxa64/libmwompwrapper.so
+7f9f39711000-7f9f39910000 ---p 00006000 fd:00 13508323                   /opt/caen/matlab-2016a/bin/glnxa64/libmwompwrapper.so
+7f9f39910000-7f9f39911000 rw-p 00005000 fd:00 13508323                   /opt/caen/matlab-2016a/bin/glnxa64/libmwompwrapper.so
+7f9f39911000-7f9f39921000 r-xp 00000000 fd:00 13507965                   /opt/caen/matlab-2016a/bin/glnxa64/libmwbinder.so
+7f9f39921000-7f9f39b21000 ---p 00010000 fd:00 13507965                   /opt/caen/matlab-2016a/bin/glnxa64/libmwbinder.so
+7f9f39b21000-7f9f39b22000 rw-p 00010000 fd:00 13507965                   /opt/caen/matlab-2016a/bin/glnxa64/libmwbinder.so
+7f9f39b22000-7f9f39cc4000 r-xp 00000000 fd:00 13508193                   /opt/caen/matlab-2016a/bin/glnxa64/libmwlapack.so
+7f9f39cc4000-7f9f39ec4000 ---p 001a2000 fd:00 13508193                   /opt/caen/matlab-2016a/bin/glnxa64/libmwlapack.so
+7f9f39ec4000-7f9f39eda000 rw-p 001a2000 fd:00 13508193                   /opt/caen/matlab-2016a/bin/glnxa64/libmwlapack.so
+7f9f39eda000-7f9f39ef2000 r-xp 00000000 fd:00 13507967                   /opt/caen/matlab-2016a/bin/glnxa64/libmwblas.so
+7f9f39ef2000-7f9f3a0f2000 ---p 00018000 fd:00 13507967                   /opt/caen/matlab-2016a/bin/glnxa64/libmwblas.so
+7f9f3a0f2000-7f9f3a0f4000 rw-p 00018000 fd:00 13507967                   /opt/caen/matlab-2016a/bin/glnxa64/libmwblas.so
+7f9f3a0f4000-7f9f3a0fa000 r-xp 00000000 fd:00 13508037                   /opt/caen/matlab-2016a/bin/glnxa64/libmwcolamd.so
+7f9f3a0fa000-7f9f3a2f9000 ---p 00006000 fd:00 13508037                   /opt/caen/matlab-2016a/bin/glnxa64/libmwcolamd.so
+7f9f3a2f9000-7f9f3a2fa000 rw-p 00005000 fd:00 13508037                   /opt/caen/matlab-2016a/bin/glnxa64/libmwcolamd.so
+7f9f3a2fa000-7f9f3a302000 r-xp 00000000 fd:00 13507957                   /opt/caen/matlab-2016a/bin/glnxa64/libmwamd.so
+7f9f3a302000-7f9f3a501000 ---p 00008000 fd:00 13507957                   /opt/caen/matlab-2016a/bin/glnxa64/libmwamd.so
+7f9f3a501000-7f9f3a502000 rw-p 00007000 fd:00 13507957                   /opt/caen/matlab-2016a/bin/glnxa64/libmwamd.so
+7f9f3a502000-7f9f3a541000 r-xp 00000000 fd:00 13508009                   /opt/caen/matlab-2016a/bin/glnxa64/libmwcholmod.so
+7f9f3a541000-7f9f3a740000 ---p 0003f000 fd:00 13508009                   /opt/caen/matlab-2016a/bin/glnxa64/libmwcholmod.so
+7f9f3a740000-7f9f3a741000 rw-p 0003e000 fd:00 13508009                   /opt/caen/matlab-2016a/bin/glnxa64/libmwcholmod.so
+7f9f3a741000-7f9f3a74f000 r-xp 00000000 fd:00 13508291                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmtok.so
+7f9f3a74f000-7f9f3a94e000 ---p 0000e000 fd:00 13508291                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmtok.so
+7f9f3a94e000-7f9f3a94f000 rw-p 0000d000 fd:00 13508291                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmtok.so
+7f9f3a94f000-7f9f3a965000 r-xp 00000000 fd:00 13508187                   /opt/caen/matlab-2016a/bin/glnxa64/libmwir_xfmr.so
+7f9f3a965000-7f9f3ab65000 ---p 00016000 fd:00 13508187                   /opt/caen/matlab-2016a/bin/glnxa64/libmwir_xfmr.so
+7f9f3ab65000-7f9f3ab66000 rw-p 00016000 fd:00 13508187                   /opt/caen/matlab-2016a/bin/glnxa64/libmwir_xfmr.so
+7f9f3ab66000-7f9f3ab78000 r-xp 00000000 fd:00 13508254                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmlib.so
+7f9f3ab78000-7f9f3ad77000 ---p 00012000 fd:00 13508254                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmlib.so
+7f9f3ad77000-7f9f3ad79000 rw-p 00011000 fd:00 13508254                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmlib.so
+7f9f3ad79000-7f9f3ad7b000 r-xp 00000000 fd:00 13508055                   /opt/caen/matlab-2016a/bin/glnxa64/libmwdSFMT.so
+7f9f3ad7b000-7f9f3af7b000 ---p 00002000 fd:00 13508055                   /opt/caen/matlab-2016a/bin/glnxa64/libmwdSFMT.so
+7f9f3af7b000-7f9f3af7c000 rw-p 00002000 fd:00 13508055                   /opt/caen/matlab-2016a/bin/glnxa64/libmwdSFMT.so
+7f9f3af7c000-7f9f3b12d000 r-xp 00000000 fd:00 13508216                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmathcore.so
+7f9f3b12d000-7f9f3b32c000 ---p 001b1000 fd:00 13508216                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmathcore.so
+7f9f3b32c000-7f9f3b33d000 rw-p 001b0000 fd:00 13508216                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmathcore.so
+7f9f3b33d000-7f9f3b33e000 rw-p 00000000 00:00 0 
+7f9f3b33e000-7f9f3b349000 r-xp 00000000 fd:00 13508245                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmfl_rng.so
+7f9f3b349000-7f9f3b549000 ---p 0000b000 fd:00 13508245                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmfl_rng.so
+7f9f3b549000-7f9f3b54a000 rw-p 0000b000 fd:00 13508245                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmfl_rng.so
+7f9f3b54a000-7f9f3b7ca000 r-xp 00000000 fd:00 13507877                   /opt/caen/matlab-2016a/bin/glnxa64/libhdf5.so.8.0.1
+7f9f3b7ca000-7f9f3b9c9000 ---p 00280000 fd:00 13507877                   /opt/caen/matlab-2016a/bin/glnxa64/libhdf5.so.8.0.1
+7f9f3b9c9000-7f9f3b9d4000 rw-p 0027f000 fd:00 13507877                   /opt/caen/matlab-2016a/bin/glnxa64/libhdf5.so.8.0.1
+7f9f3b9d4000-7f9f3b9d6000 rw-p 00000000 00:00 0 
+7f9f3b9d6000-7f9f3b9f4000 r-xp 00000000 fd:00 13507879                   /opt/caen/matlab-2016a/bin/glnxa64/libhdf5_hl.so.8.0.1
+7f9f3b9f4000-7f9f3bbf3000 ---p 0001e000 fd:00 13507879                   /opt/caen/matlab-2016a/bin/glnxa64/libhdf5_hl.so.8.0.1
+7f9f3bbf3000-7f9f3bbf4000 rw-p 0001d000 fd:00 13507879                   /opt/caen/matlab-2016a/bin/glnxa64/libhdf5_hl.so.8.0.1
+7f9f3bbf4000-7f9f3bc05000 rw-p 00000000 00:00 0 
+7f9f3bc05000-7f9f3bc1c000 r-xp 00000000 fd:00 13508704                   /opt/caen/matlab-2016a/bin/glnxa64/libmwstoragesharedlib.so
+7f9f3bc1c000-7f9f3be1b000 ---p 00017000 fd:00 13508704                   /opt/caen/matlab-2016a/bin/glnxa64/libmwstoragesharedlib.so
+7f9f3be1b000-7f9f3be1d000 rw-p 00016000 fd:00 13508704                   /opt/caen/matlab-2016a/bin/glnxa64/libmwstoragesharedlib.so
+7f9f3be1d000-7f9f3be23000 r-xp 00000000 fd:00 13508115                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflstorageevents.so
+7f9f3be23000-7f9f3c022000 ---p 00006000 fd:00 13508115                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflstorageevents.so
+7f9f3c022000-7f9f3c023000 rw-p 00005000 fd:00 13508115                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflstorageevents.so
+7f9f3c023000-7f9f3c025000 r-xp 00000000 fd:00 31457940                   /usr/lib64/libfreebl3.so
+7f9f3c025000-7f9f3c224000 ---p 00002000 fd:00 31457940                   /usr/lib64/libfreebl3.so
+7f9f3c224000-7f9f3c225000 r--p 00001000 fd:00 31457940                   /usr/lib64/libfreebl3.so
+7f9f3c225000-7f9f3c226000 rw-p 00002000 fd:00 31457940                   /usr/lib64/libfreebl3.so
+7f9f3c226000-7f9f3c22b000 r-xp 00000000 fd:00 13508192                   /opt/caen/matlab-2016a/bin/glnxa64/libmwlanguage_execution_interfaces.so
+7f9f3c22b000-7f9f3c42a000 ---p 00005000 fd:00 13508192                   /opt/caen/matlab-2016a/bin/glnxa64/libmwlanguage_execution_interfaces.so
+7f9f3c42a000-7f9f3c42b000 rw-p 00004000 fd:00 13508192                   /opt/caen/matlab-2016a/bin/glnxa64/libmwlanguage_execution_interfaces.so
+7f9f3c42b000-7f9f3c49f000 r-xp 00000000 fd:00 13508682                   /opt/caen/matlab-2016a/bin/glnxa64/libmwspmatrix.so
+7f9f3c49f000-7f9f3c69e000 ---p 00074000 fd:00 13508682                   /opt/caen/matlab-2016a/bin/glnxa64/libmwspmatrix.so
+7f9f3c69e000-7f9f3c6a0000 rw-p 00073000 fd:00 13508682                   /opt/caen/matlab-2016a/bin/glnxa64/libmwspmatrix.so
+7f9f3c6a0000-7f9f3ca34000 r-xp 00000000 fd:00 13508206                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_parser.so
+7f9f3ca34000-7f9f3cc33000 ---p 00394000 fd:00 13508206                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_parser.so
+7f9f3cc33000-7f9f3d0c7000 rw-p 00393000 fd:00 13508206                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_parser.so
+7f9f3d0c7000-7f9f3d13f000 r-xp 00000000 fd:00 13508204                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_ir.so
+7f9f3d13f000-7f9f3d33f000 ---p 00078000 fd:00 13508204                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_ir.so
+7f9f3d33f000-7f9f3d348000 rw-p 00078000 fd:00 13508204                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_ir.so
+7f9f3d348000-7f9f3d3c5000 r-xp 00000000 fd:00 13508220                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmathrng.so
+7f9f3d3c5000-7f9f3d5c5000 ---p 0007d000 fd:00 13508220                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmathrng.so
+7f9f3d5c5000-7f9f3d5ce000 rw-p 0007d000 fd:00 13508220                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmathrng.so
+7f9f3d5ce000-7f9f3d5cf000 rw-p 00000000 00:00 0 
+7f9f3d5cf000-7f9f3d6eb000 r-xp 00000000 fd:00 13508222                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmathutil.so
+7f9f3d6eb000-7f9f3d8eb000 ---p 0011c000 fd:00 13508222                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmathutil.so
+7f9f3d8eb000-7f9f3d8ec000 rw-p 0011c000 fd:00 13508222                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmathutil.so
+7f9f3d8ec000-7f9f3d918000 r-xp 00000000 fd:00 13507920                   /opt/caen/matlab-2016a/bin/glnxa64/libmex.so
+7f9f3d918000-7f9f3db18000 ---p 0002c000 fd:00 13507920                   /opt/caen/matlab-2016a/bin/glnxa64/libmex.so
+7f9f3db18000-7f9f3db1b000 rw-p 0002c000 fd:00 13507920                   /opt/caen/matlab-2016a/bin/glnxa64/libmex.so
+7f9f3db1b000-7f9f3db6e000 r-xp 00000000 fd:00 13507919                   /opt/caen/matlab-2016a/bin/glnxa64/libmat.so
+7f9f3db6e000-7f9f3dd6d000 ---p 00053000 fd:00 13507919                   /opt/caen/matlab-2016a/bin/glnxa64/libmat.so
+7f9f3dd6d000-7f9f3dd72000 rw-p 00052000 fd:00 13507919                   /opt/caen/matlab-2016a/bin/glnxa64/libmat.so
+7f9f3dd72000-7f9f3dd97000 r-xp 00000000 fd:00 31458052                   /usr/lib64/libtinfo.so.5.9
+7f9f3dd97000-7f9f3df97000 ---p 00025000 fd:00 31458052                   /usr/lib64/libtinfo.so.5.9
+7f9f3df97000-7f9f3df9b000 r--p 00025000 fd:00 31458052                   /usr/lib64/libtinfo.so.5.9
+7f9f3df9b000-7f9f3df9c000 rw-p 00029000 fd:00 31458052                   /usr/lib64/libtinfo.so.5.9
+7f9f3df9c000-7f9f3dfa8000 r-xp 00000000 fd:00 13507924                   /opt/caen/matlab-2016a/bin/glnxa64/libminizip.so
+7f9f3dfa8000-7f9f3e1a7000 ---p 0000c000 fd:00 13507924                   /opt/caen/matlab-2016a/bin/glnxa64/libminizip.so
+7f9f3e1a7000-7f9f3e1a8000 rw-p 0000b000 fd:00 13507924                   /opt/caen/matlab-2016a/bin/glnxa64/libminizip.so
+7f9f3e1a8000-7f9f3e216000 r-xp 00000000 fd:00 13508766                   /opt/caen/matlab-2016a/bin/glnxa64/libmwxmlcore.so
+7f9f3e216000-7f9f3e416000 ---p 0006e000 fd:00 13508766                   /opt/caen/matlab-2016a/bin/glnxa64/libmwxmlcore.so
+7f9f3e416000-7f9f3e41e000 rw-p 0006e000 fd:00 13508766                   /opt/caen/matlab-2016a/bin/glnxa64/libmwxmlcore.so
+7f9f3e41e000-7f9f3e41f000 rw-p 00000000 00:00 0 
+7f9f3e41f000-7f9f3e464000 r-xp 00000000 fd:00 13508705                   /opt/caen/matlab-2016a/bin/glnxa64/libmwstorageshlibstoragesys.so
+7f9f3e464000-7f9f3e664000 ---p 00045000 fd:00 13508705                   /opt/caen/matlab-2016a/bin/glnxa64/libmwstorageshlibstoragesys.so
+7f9f3e664000-7f9f3e668000 rw-p 00045000 fd:00 13508705                   /opt/caen/matlab-2016a/bin/glnxa64/libmwstorageshlibstoragesys.so
+7f9f3e668000-7f9f3e6e2000 r-xp 00000000 fd:00 13508116                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflstorageprovider.so
+7f9f3e6e2000-7f9f3e8e1000 ---p 0007a000 fd:00 13508116                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflstorageprovider.so
+7f9f3e8e1000-7f9f3e8e8000 rw-p 00079000 fd:00 13508116                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflstorageprovider.so
+7f9f3e8e8000-7f9f3e9a5000 r-xp 00000000 fd:00 13508117                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflstoragevfs.so
+7f9f3e9a5000-7f9f3eba5000 ---p 000bd000 fd:00 13508117                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflstoragevfs.so
+7f9f3eba5000-7f9f3ebae000 rw-p 000bd000 fd:00 13508117                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflstoragevfs.so
+7f9f3ebae000-7f9f3ec8c000 r-xp 00000000 fd:00 13508113                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflnetwork.so
+7f9f3ec8c000-7f9f3ee8c000 ---p 000de000 fd:00 13508113                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflnetwork.so
+7f9f3ee8c000-7f9f3ee90000 rw-p 000de000 fd:00 13508113                   /opt/caen/matlab-2016a/bin/glnxa64/libmwflnetwork.so
+7f9f3ee90000-7f9f3eea5000 r-xp 00000000 fd:00 31458096                   /usr/lib64/libz.so.1.2.7
+7f9f3eea5000-7f9f3f0a4000 ---p 00015000 fd:00 31458096                   /usr/lib64/libz.so.1.2.7
+7f9f3f0a4000-7f9f3f0a5000 r--p 00014000 fd:00 31458096                   /usr/lib64/libz.so.1.2.7
+7f9f3f0a5000-7f9f3f0a6000 rw-p 00015000 fd:00 31458096                   /usr/lib64/libz.so.1.2.7
+7f9f3f0a6000-7f9f3f0b6000 r-xp 00000000 fd:00 13508907                   /opt/caen/matlab-2016a/bin/glnxa64/libunwind.so.8.0.1
+7f9f3f0b6000-7f9f3f2b5000 ---p 00010000 fd:00 13508907                   /opt/caen/matlab-2016a/bin/glnxa64/libunwind.so.8.0.1
+7f9f3f2b5000-7f9f3f2b6000 rw-p 0000f000 fd:00 13508907                   /opt/caen/matlab-2016a/bin/glnxa64/libunwind.so.8.0.1
+7f9f3f2b6000-7f9f3f2c5000 rw-p 00000000 00:00 0 
+7f9f3f2c5000-7f9f3f2dc000 r-xp 00000000 fd:00 13507815                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_signals.so.1.56.0
+7f9f3f2dc000-7f9f3f4dc000 ---p 00017000 fd:00 13507815                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_signals.so.1.56.0
+7f9f3f4dc000-7f9f3f4dd000 rw-p 00017000 fd:00 13507815                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_signals.so.1.56.0
+7f9f3f4dd000-7f9f3f4e5000 r-xp 00000000 fd:00 31457985                   /usr/lib64/libcrypt-2.17.so
+7f9f3f4e5000-7f9f3f6e4000 ---p 00008000 fd:00 31457985                   /usr/lib64/libcrypt-2.17.so
+7f9f3f6e4000-7f9f3f6e5000 r--p 00007000 fd:00 31457985                   /usr/lib64/libcrypt-2.17.so
+7f9f3f6e5000-7f9f3f6e6000 rw-p 00008000 fd:00 31457985                   /usr/lib64/libcrypt-2.17.so
+7f9f3f6e6000-7f9f3f714000 rw-p 00000000 00:00 0 
+7f9f3f714000-7f9f3f719000 r-xp 00000000 fd:00 13508306                   /opt/caen/matlab-2016a/bin/glnxa64/libmwnativejava_services.so
+7f9f3f719000-7f9f3f918000 ---p 00005000 fd:00 13508306                   /opt/caen/matlab-2016a/bin/glnxa64/libmwnativejava_services.so
+7f9f3f918000-7f9f3f919000 rw-p 00004000 fd:00 13508306                   /opt/caen/matlab-2016a/bin/glnxa64/libmwnativejava_services.so
+7f9f3f919000-7f9f3fc73000 r-xp 00000000 fd:00 13508303                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmvm.so
+7f9f3fc73000-7f9f3fe72000 ---p 0035a000 fd:00 13508303                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmvm.so
+7f9f3fe72000-7f9f3fe9a000 rw-p 00359000 fd:00 13508303                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmvm.so
+7f9f3fe9a000-7f9f3fe9f000 rw-p 00000000 00:00 0 
+7f9f3fe9f000-7f9f3ffdd000 r-xp 00000000 fd:00 13508184                   /opt/caen/matlab-2016a/bin/glnxa64/libmwiqm.so
+7f9f3ffdd000-7f9f401dc000 ---p 0013e000 fd:00 13508184                   /opt/caen/matlab-2016a/bin/glnxa64/libmwiqm.so
+7f9f401dc000-7f9f401eb000 rw-p 0013d000 fd:00 13508184                   /opt/caen/matlab-2016a/bin/glnxa64/libmwiqm.so
+7f9f401eb000-7f9f401ec000 rw-p 00000000 00:00 0 
+7f9f401ec000-7f9f4063e000 r-xp 00000000 fd:00 13508203                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_interpreter.so
+7f9f4063e000-7f9f4083e000 ---p 00452000 fd:00 13508203                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_interpreter.so
+7f9f4083e000-7f9f4086f000 rw-p 00452000 fd:00 13508203                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_interpreter.so
+7f9f4086f000-7f9f40875000 rw-p 00000000 00:00 0 
+7f9f40875000-7f9f40960000 r-xp 00000000 fd:00 13508202                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_dispatcher.so
+7f9f40960000-7f9f40b60000 ---p 000eb000 fd:00 13508202                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_dispatcher.so
+7f9f40b60000-7f9f40b6b000 rw-p 000eb000 fd:00 13508202                   /opt/caen/matlab-2016a/bin/glnxa64/libmwm_dispatcher.so
+7f9f40b6b000-7f9f40fab000 r-xp 00000000 fd:00 13508909                   /opt/caen/matlab-2016a/bin/glnxa64/libxerces-c-3.1.so
+7f9f40fab000-7f9f411aa000 ---p 00440000 fd:00 13508909                   /opt/caen/matlab-2016a/bin/glnxa64/libxerces-c-3.1.so
+7f9f411aa000-7f9f411f0000 rw-p 0043f000 fd:00 13508909                   /opt/caen/matlab-2016a/bin/glnxa64/libxerces-c-3.1.so
+7f9f411f0000-7f9f41276000 r-xp 00000000 fd:00 13507631                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoXML.so.23
+7f9f41276000-7f9f41475000 ---p 00086000 fd:00 13507631                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoXML.so.23
+7f9f41475000-7f9f4147d000 rw-p 00085000 fd:00 13507631                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoXML.so.23
+7f9f4147d000-7f9f414e5000 r-xp 00000000 fd:00 13507630                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoUtil.so.23
+7f9f414e5000-7f9f416e4000 ---p 00068000 fd:00 13507630                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoUtil.so.23
+7f9f416e4000-7f9f416e8000 rw-p 00067000 fd:00 13507630                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoUtil.so.23
+7f9f416e8000-7f9f41726000 r-xp 00000000 fd:00 13507629                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoNetSSL.so.23
+7f9f41726000-7f9f41926000 ---p 0003e000 fd:00 13507629                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoNetSSL.so.23
+7f9f41926000-7f9f41929000 rw-p 0003e000 fd:00 13507629                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoNetSSL.so.23
+7f9f41929000-7f9f41a27000 r-xp 00000000 fd:00 13507628                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoNet.so.23
+7f9f41a27000-7f9f41c26000 ---p 000fe000 fd:00 13507628                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoNet.so.23
+7f9f41c26000-7f9f41c32000 rw-p 000fd000 fd:00 13507628                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoNet.so.23
+7f9f41c32000-7f9f41c33000 rw-p 00000000 00:00 0 
+7f9f41c33000-7f9f41c7d000 r-xp 00000000 fd:00 13507626                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoJSON.so.23
+7f9f41c7d000-7f9f41e7d000 ---p 0004a000 fd:00 13507626                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoJSON.so.23
+7f9f41e7d000-7f9f41e80000 rw-p 0004a000 fd:00 13507626                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoJSON.so.23
+7f9f41e80000-7f9f42023000 r-xp 00000000 fd:00 13507625                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoFoundation.so.23
+7f9f42023000-7f9f42223000 ---p 001a3000 fd:00 13507625                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoFoundation.so.23
+7f9f42223000-7f9f42233000 rw-p 001a3000 fd:00 13507625                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoFoundation.so.23
+7f9f42233000-7f9f42234000 rw-p 00000000 00:00 0 
+7f9f42234000-7f9f42254000 r-xp 00000000 fd:00 13507622                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoCrypto.so.23
+7f9f42254000-7f9f42454000 ---p 00020000 fd:00 13507622                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoCrypto.so.23
+7f9f42454000-7f9f42456000 rw-p 00020000 fd:00 13507622                   /opt/caen/matlab-2016a/bin/glnxa64/libPocoCrypto.so.23
+7f9f42456000-7f9f42610000 r-xp 00000000 fd:00 13507838                   /opt/caen/matlab-2016a/bin/glnxa64/libcrypto.so.1.0.0
+7f9f42610000-7f9f4280f000 ---p 001ba000 fd:00 13507838                   /opt/caen/matlab-2016a/bin/glnxa64/libcrypto.so.1.0.0
+7f9f4280f000-7f9f42835000 rw-p 001b9000 fd:00 13507838                   /opt/caen/matlab-2016a/bin/glnxa64/libcrypto.so.1.0.0
+7f9f42835000-7f9f42839000 rw-p 00000000 00:00 0 
+7f9f42839000-7f9f4289b000 r-xp 00000000 fd:00 13508885                   /opt/caen/matlab-2016a/bin/glnxa64/libssl.so.1.0.0
+7f9f4289b000-7f9f42a9a000 ---p 00062000 fd:00 13508885                   /opt/caen/matlab-2016a/bin/glnxa64/libssl.so.1.0.0
+7f9f42a9a000-7f9f42aa4000 rw-p 00061000 fd:00 13508885                   /opt/caen/matlab-2016a/bin/glnxa64/libssl.so.1.0.0
+7f9f42aa4000-7f9f42aca000 r-xp 00000000 fd:00 31458042                   /usr/lib64/libncurses.so.5.9
+7f9f42aca000-7f9f42cc9000 ---p 00026000 fd:00 31458042                   /usr/lib64/libncurses.so.5.9
+7f9f42cc9000-7f9f42cca000 r--p 00025000 fd:00 31458042                   /usr/lib64/libncurses.so.5.9
+7f9f42cca000-7f9f42ccb000 rw-p 00026000 fd:00 31458042                   /usr/lib64/libncurses.so.5.9
+7f9f42ccb000-7f9f42d5f000 r-xp 00000000 fd:00 13507559                   /opt/caen/matlab-2016a/bin/glnxa64/libCppMicroServices.so.2.1.0
+7f9f42d5f000-7f9f42f5f000 ---p 00094000 fd:00 13507559                   /opt/caen/matlab-2016a/bin/glnxa64/libCppMicroServices.so.2.1.0
+7f9f42f5f000-7f9f42f62000 rw-p 00094000 fd:00 13507559                   /opt/caen/matlab-2016a/bin/glnxa64/libCppMicroServices.so.2.1.0
+7f9f42f62000-7f9f42fc4000 r-xp 00000000 fd:00 13507814                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_serialization.so.1.56.0
+7f9f42fc4000-7f9f431c4000 ---p 00062000 fd:00 13507814                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_serialization.so.1.56.0
+7f9f431c4000-7f9f431c8000 rw-p 00062000 fd:00 13507814                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_serialization.so.1.56.0
+7f9f431c8000-7f9f431db000 r-xp 00000000 fd:00 13507800                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_iostreams.so.1.56.0
+7f9f431db000-7f9f433da000 ---p 00013000 fd:00 13507800                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_iostreams.so.1.56.0
+7f9f433da000-7f9f433dc000 rw-p 00012000 fd:00 13507800                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_iostreams.so.1.56.0
+7f9f433dc000-7f9f43424000 r-xp 00000000 fd:00 13508233                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmcos.so
+7f9f43424000-7f9f43624000 ---p 00048000 fd:00 13508233                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmcos.so
+7f9f43624000-7f9f4362a000 rw-p 00048000 fd:00 13508233                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmcos.so
+7f9f4362a000-7f9f43636000 r-xp 00000000 fd:00 13508759                   /opt/caen/matlab-2016a/bin/glnxa64/libmwwebproxy.so
+7f9f43636000-7f9f43836000 ---p 0000c000 fd:00 13508759                   /opt/caen/matlab-2016a/bin/glnxa64/libmwwebproxy.so
+7f9f43836000-7f9f43837000 rw-p 0000c000 fd:00 13508759                   /opt/caen/matlab-2016a/bin/glnxa64/libmwwebproxy.so
+7f9f43837000-7f9f43aec000 r-xp 00000000 fd:00 13508327                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopcmwservices.so
+7f9f43aec000-7f9f43ceb000 ---p 002b5000 fd:00 13508327                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopcmwservices.so
+7f9f43ceb000-7f9f43d29000 rw-p 002b4000 fd:00 13508327                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopcmwservices.so
+7f9f43d29000-7f9f43d2b000 rw-p 00000000 00:00 0 
+7f9f43d2b000-7f9f43d4d000 r-xp 00000000 fd:00 13508328                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopczippackage.so
+7f9f43d4d000-7f9f43f4c000 ---p 00022000 fd:00 13508328                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopczippackage.so
+7f9f43f4c000-7f9f43f4f000 rw-p 00021000 fd:00 13508328                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopczippackage.so
+7f9f43f4f000-7f9f43fd2000 r-xp 00000000 fd:00 13508326                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopcmodel.so
+7f9f43fd2000-7f9f441d1000 ---p 00083000 fd:00 13508326                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopcmodel.so
+7f9f441d1000-7f9f441d6000 rw-p 00082000 fd:00 13508326                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopcmodel.so
+7f9f441d6000-7f9f44232000 r-xp 00000000 fd:00 13508324                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopccore.so
+7f9f44232000-7f9f44432000 ---p 0005c000 fd:00 13508324                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopccore.so
+7f9f44432000-7f9f44436000 rw-p 0005c000 fd:00 13508324                   /opt/caen/matlab-2016a/bin/glnxa64/libmwopccore.so
+7f9f44436000-7f9f4443f000 r-xp 00000000 fd:00 13508305                   /opt/caen/matlab-2016a/bin/glnxa64/libmwnativedisplay.so
+7f9f4443f000-7f9f4463f000 ---p 00009000 fd:00 13508305                   /opt/caen/matlab-2016a/bin/glnxa64/libmwnativedisplay.so
+7f9f4463f000-7f9f44640000 rw-p 00009000 fd:00 13508305                   /opt/caen/matlab-2016a/bin/glnxa64/libmwnativedisplay.so
+7f9f44640000-7f9f448a5000 r-xp 00000000 fd:00 13508559                   /opt/caen/matlab-2016a/bin/glnxa64/libmwsettingscore.so
+7f9f448a5000-7f9f44aa4000 ---p 00265000 fd:00 13508559                   /opt/caen/matlab-2016a/bin/glnxa64/libmwsettingscore.so
+7f9f44aa4000-7f9f44ab7000 rw-p 00264000 fd:00 13508559                   /opt/caen/matlab-2016a/bin/glnxa64/libmwsettingscore.so
+7f9f44ab7000-7f9f44ab8000 rw-p 00000000 00:00 0 
+7f9f44ab8000-7f9f44b38000 r-xp 00000000 fd:00 13508286                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmpath.so
+7f9f44b38000-7f9f44d37000 ---p 00080000 fd:00 13508286                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmpath.so
+7f9f44d37000-7f9f44d3d000 rw-p 0007f000 fd:00 13508286                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmpath.so
+7f9f44d3d000-7f9f44d41000 rw-p 00000000 00:00 0 
+7f9f44d41000-7f9f44d84000 r-xp 00000000 fd:00 13508525                   /opt/caen/matlab-2016a/bin/glnxa64/libmwregexp.so
+7f9f44d84000-7f9f44f83000 ---p 00043000 fd:00 13508525                   /opt/caen/matlab-2016a/bin/glnxa64/libmwregexp.so
+7f9f44f83000-7f9f44f89000 rw-p 00042000 fd:00 13508525                   /opt/caen/matlab-2016a/bin/glnxa64/libmwregexp.so
+7f9f44f89000-7f9f45110000 r-xp 00000000 fd:00 13508770                   /opt/caen/matlab-2016a/bin/glnxa64/libmx.so
+7f9f45110000-7f9f45310000 ---p 00187000 fd:00 13508770                   /opt/caen/matlab-2016a/bin/glnxa64/libmx.so
+7f9f45310000-7f9f45320000 rw-p 00187000 fd:00 13508770                   /opt/caen/matlab-2016a/bin/glnxa64/libmx.so
+7f9f45320000-7f9f45326000 r-xp 00000000 fd:00 13508076                   /opt/caen/matlab-2016a/bin/glnxa64/libmwdisplay_device.so
+7f9f45326000-7f9f45526000 ---p 00006000 fd:00 13508076                   /opt/caen/matlab-2016a/bin/glnxa64/libmwdisplay_device.so
+7f9f45526000-7f9f45527000 rw-p 00006000 fd:00 13508076                   /opt/caen/matlab-2016a/bin/glnxa64/libmwdisplay_device.so
+7f9f45527000-7f9f45553000 r-xp 00000000 fd:00 13508899                   /opt/caen/matlab-2016a/bin/glnxa64/libtbbmalloc.so.2
+7f9f45553000-7f9f45753000 ---p 0002c000 fd:00 13508899                   /opt/caen/matlab-2016a/bin/glnxa64/libtbbmalloc.so.2
+7f9f45753000-7f9f45756000 rw-p 0002c000 fd:00 13508899                   /opt/caen/matlab-2016a/bin/glnxa64/libtbbmalloc.so.2
+7f9f45756000-7f9f45779000 rw-p 00000000 00:00 0 
+7f9f45779000-7f9f457bd000 r-xp 00000000 fd:00 13508898                   /opt/caen/matlab-2016a/bin/glnxa64/libtbb.so.2
+7f9f457bd000-7f9f459bd000 ---p 00044000 fd:00 13508898                   /opt/caen/matlab-2016a/bin/glnxa64/libtbb.so.2
+7f9f459bd000-7f9f459c2000 rw-p 00044000 fd:00 13508898                   /opt/caen/matlab-2016a/bin/glnxa64/libtbb.so.2
+7f9f459c2000-7f9f459c4000 rw-p 00000000 00:00 0 
+7f9f459c4000-7f9f459d0000 r-xp 00000000 fd:00 13507887                   /opt/caen/matlab-2016a/bin/glnxa64/libicuio.so.54.1
+7f9f459d0000-7f9f45bcf000 ---p 0000c000 fd:00 13507887                   /opt/caen/matlab-2016a/bin/glnxa64/libicuio.so.54.1
+7f9f45bcf000-7f9f45bd1000 rw-p 0000b000 fd:00 13507887                   /opt/caen/matlab-2016a/bin/glnxa64/libicuio.so.54.1
+7f9f45bd1000-7f9f45e0f000 r-xp 00000000 fd:00 13507885                   /opt/caen/matlab-2016a/bin/glnxa64/libicui18n.so.54.1
+7f9f45e0f000-7f9f4600e000 ---p 0023e000 fd:00 13507885                   /opt/caen/matlab-2016a/bin/glnxa64/libicui18n.so.54.1
+7f9f4600e000-7f9f4601f000 rw-p 0023d000 fd:00 13507885                   /opt/caen/matlab-2016a/bin/glnxa64/libicui18n.so.54.1
+7f9f4601f000-7f9f46020000 rw-p 00000000 00:00 0 
+7f9f46020000-7f9f46197000 r-xp 00000000 fd:00 13507889                   /opt/caen/matlab-2016a/bin/glnxa64/libicuuc.so.54.1
+7f9f46197000-7f9f46396000 ---p 00177000 fd:00 13507889                   /opt/caen/matlab-2016a/bin/glnxa64/libicuuc.so.54.1
+7f9f46396000-7f9f463a7000 rw-p 00176000 fd:00 13507889                   /opt/caen/matlab-2016a/bin/glnxa64/libicuuc.so.54.1
+7f9f463a7000-7f9f463ac000 rw-p 00000000 00:00 0 
+7f9f463ac000-7f9f47bd8000 r-xp 00000000 fd:00 13507883                   /opt/caen/matlab-2016a/bin/glnxa64/libicudata.so.54.1
+7f9f47bd8000-7f9f47dd7000 ---p 0182c000 fd:00 13507883                   /opt/caen/matlab-2016a/bin/glnxa64/libicudata.so.54.1
+7f9f47dd7000-7f9f47dd8000 rw-p 0182b000 fd:00 13507883                   /opt/caen/matlab-2016a/bin/glnxa64/libicudata.so.54.1
+7f9f47dd8000-7f9f47dfe000 r-xp 00000000 fd:00 13507862                   /opt/caen/matlab-2016a/bin/glnxa64/libexpat.so.1.5.0
+7f9f47dfe000-7f9f47ffd000 ---p 00026000 fd:00 13507862                   /opt/caen/matlab-2016a/bin/glnxa64/libexpat.so.1.5.0
+7f9f47ffd000-7f9f48000000 rw-p 00025000 fd:00 13507862                   /opt/caen/matlab-2016a/bin/glnxa64/libexpat.so.1.5.0
+7f9f48000000-7f9f48348000 rw-p 00000000 00:00 0 
+7f9f48348000-7f9f4c000000 ---p 00000000 00:00 0 
+7f9f4c094000-7f9f4c0b7000 r-xp 00000000 fd:00 13507817                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_thread.so.1.56.0
+7f9f4c0b7000-7f9f4c2b7000 ---p 00023000 fd:00 13507817                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_thread.so.1.56.0
+7f9f4c2b7000-7f9f4c2b9000 rw-p 00023000 fd:00 13507817                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_thread.so.1.56.0
+7f9f4c2b9000-7f9f4c3d0000 r-xp 00000000 fd:00 13507813                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_regex.so.1.56.0
+7f9f4c3d0000-7f9f4c5d0000 ---p 00117000 fd:00 13507813                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_regex.so.1.56.0
+7f9f4c5d0000-7f9f4c5d7000 rw-p 00117000 fd:00 13507813                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_regex.so.1.56.0
+7f9f4c5d7000-7f9f4c6a7000 r-xp 00000000 fd:00 13507802                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_log.so.1.56.0
+7f9f4c6a7000-7f9f4c8a6000 ---p 000d0000 fd:00 13507802                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_log.so.1.56.0
+7f9f4c8a6000-7f9f4c8af000 rw-p 000cf000 fd:00 13507802                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_log.so.1.56.0
+7f9f4c8af000-7f9f4c8c3000 r-xp 00000000 fd:00 13507798                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_filesystem.so.1.56.0
+7f9f4c8c3000-7f9f4cac3000 ---p 00014000 fd:00 13507798                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_filesystem.so.1.56.0
+7f9f4cac3000-7f9f4cac4000 rw-p 00014000 fd:00 13507798                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_filesystem.so.1.56.0
+7f9f4cac4000-7f9f4cad3000 r-xp 00000000 fd:00 13507797                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_date_time.so.1.56.0
+7f9f4cad3000-7f9f4ccd2000 ---p 0000f000 fd:00 13507797                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_date_time.so.1.56.0
+7f9f4ccd2000-7f9f4ccd4000 rw-p 0000e000 fd:00 13507797                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_date_time.so.1.56.0
+7f9f4ccd4000-7f9f4ccda000 r-xp 00000000 fd:00 13507793                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_chrono.so.1.56.0
+7f9f4ccda000-7f9f4ceda000 ---p 00006000 fd:00 13507793                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_chrono.so.1.56.0
+7f9f4ceda000-7f9f4cedb000 rw-p 00006000 fd:00 13507793                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_chrono.so.1.56.0
+7f9f4cedb000-7f9f4cedc000 r-xp 00000000 fd:00 13508529                   /opt/caen/matlab-2016a/bin/glnxa64/libmwresource_core.so
+7f9f4cedc000-7f9f4d0dc000 ---p 00001000 fd:00 13508529                   /opt/caen/matlab-2016a/bin/glnxa64/libmwresource_core.so
+7f9f4d0dc000-7f9f4d0dd000 rw-p 00001000 fd:00 13508529                   /opt/caen/matlab-2016a/bin/glnxa64/libmwresource_core.so
+7f9f4d0dd000-7f9f4d0f2000 r-xp 00000000 fd:00 14291815                   /opt/caen/matlab-2016a/sys/os/glnxa64/libgcc_s.so.1
+7f9f4d0f2000-7f9f4d2f1000 ---p 00015000 fd:00 14291815                   /opt/caen/matlab-2016a/sys/os/glnxa64/libgcc_s.so.1
+7f9f4d2f1000-7f9f4d2f2000 rw-p 00014000 fd:00 14291815                   /opt/caen/matlab-2016a/sys/os/glnxa64/libgcc_s.so.1
+7f9f4d2f2000-7f9f4d3db000 r-xp 00000000 fd:00 14291827                   /opt/caen/matlab-2016a/sys/os/glnxa64/libstdc++.so.6.0.17
+7f9f4d3db000-7f9f4d5da000 ---p 000e9000 fd:00 14291827                   /opt/caen/matlab-2016a/sys/os/glnxa64/libstdc++.so.6.0.17
+7f9f4d5da000-7f9f4d5e2000 r--p 000e8000 fd:00 14291827                   /opt/caen/matlab-2016a/sys/os/glnxa64/libstdc++.so.6.0.17
+7f9f4d5e2000-7f9f4d5e4000 rw-p 000f0000 fd:00 14291827                   /opt/caen/matlab-2016a/sys/os/glnxa64/libstdc++.so.6.0.17
+7f9f4d5e4000-7f9f4d5f9000 rw-p 00000000 00:00 0 
+7f9f4d5f9000-7f9f4d60d000 r-xp 00000000 fd:00 13508046                   /opt/caen/matlab-2016a/bin/glnxa64/libmwcpp11compat.so
+7f9f4d60d000-7f9f4d80d000 ---p 00014000 fd:00 13508046                   /opt/caen/matlab-2016a/bin/glnxa64/libmwcpp11compat.so
+7f9f4d80d000-7f9f4d80e000 rw-p 00014000 fd:00 13508046                   /opt/caen/matlab-2016a/bin/glnxa64/libmwcpp11compat.so
+7f9f4d80e000-7f9f4d811000 r-xp 00000000 fd:00 13507816                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_system.so.1.56.0
+7f9f4d811000-7f9f4da10000 ---p 00003000 fd:00 13507816                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_system.so.1.56.0
+7f9f4da10000-7f9f4da11000 rw-p 00002000 fd:00 13507816                   /opt/caen/matlab-2016a/bin/glnxa64/libboost_system.so.1.56.0
+7f9f4da11000-7f9f4e023000 r-xp 00000000 fd:00 13508265                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmlutil.so
+7f9f4e023000-7f9f4e223000 ---p 00612000 fd:00 13508265                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmlutil.so
+7f9f4e223000-7f9f4e265000 rw-p 00612000 fd:00 13508265                   /opt/caen/matlab-2016a/bin/glnxa64/libmwmlutil.so
+7f9f4e265000-7f9f4e26f000 rw-p 00000000 00:00 0 
+7f9f4e26f000-7f9f4e453000 r-xp 00000000 fd:00 13508109                   /opt/caen/matlab-2016a/bin/glnxa64/libmwfl.so
+7f9f4e453000-7f9f4e652000 ---p 001e4000 fd:00 13508109                   /opt/caen/matlab-2016a/bin/glnxa64/libmwfl.so
+7f9f4e652000-7f9f4e664000 rw-p 001e3000 fd:00 13508109                   /opt/caen/matlab-2016a/bin/glnxa64/libmwfl.so
+7f9f4e664000-7f9f4e675000 rw-p 00000000 00:00 0 
+7f9f4e675000-7f9f4e803000 r-xp 00000000 fd:00 13508188                   /opt/caen/matlab-2016a/bin/glnxa64/libmwjmi.so
+7f9f4e803000-7f9f4ea02000 ---p 0018e000 fd:00 13508188                   /opt/caen/matlab-2016a/bin/glnxa64/libmwjmi.so
+7f9f4ea02000-7f9f4ea17000 rw-p 0018d000 fd:00 13508188                   /opt/caen/matlab-2016a/bin/glnxa64/libmwjmi.so
+7f9f4ea17000-7f9f4ea1c000 rw-p 00000000 00:00 0 
+7f9f4ea1c000-7f9f4ee97000 r-xp 00000000 fd:00 13508290                   /opt/caen/matlab-2016a/bin/glnxa64/libmwms.so
+7f9f4ee97000-7f9f4f097000 ---p 0047b000 fd:00 13508290                   /opt/caen/matlab-2016a/bin/glnxa64/libmwms.so
+7f9f4f097000-7f9f4f0c8000 rw-p 0047b000 fd:00 13508290                   /opt/caen/matlab-2016a/bin/glnxa64/libmwms.so
+7f9f4f0c8000-7f9f4f0ce000 rw-p 00000000 00:00 0 
+7f9f4f0ce000-7f9f4f1e7000 r-xp 00000000 fd:00 13508161                   /opt/caen/matlab-2016a/bin/glnxa64/libmwi18n.so
+7f9f4f1e7000-7f9f4f3e6000 ---p 00119000 fd:00 13508161                   /opt/caen/matlab-2016a/bin/glnxa64/libmwi18n.so
+7f9f4f3e6000-7f9f4f3f2000 rw-p 00118000 fd:00 13508161                   /opt/caen/matlab-2016a/bin/glnxa64/libmwi18n.so
+7f9f4f3f2000-7f9f4f8f2000 r-xp 00000000 fd:00 13508558                   /opt/caen/matlab-2016a/bin/glnxa64/libmwservices.so
+7f9f4f8f2000-7f9f4faf2000 ---p 00500000 fd:00 13508558                   /opt/caen/matlab-2016a/bin/glnxa64/libmwservices.so
+7f9f4faf2000-7f9f4fb22000 rw-p 00500000 fd:00 13508558                   /opt/caen/matlab-2016a/bin/glnxa64/libmwservices.so
+7f9f4fb22000-7f9f4fb31000 rw-p 00000000 00:00 0 
+7f9f4fb31000-7f9f4fbd7000 r-xp 00000000 fd:00 13508908                   /opt/caen/matlab-2016a/bin/glnxa64/libut.so
+7f9f4fbd7000-7f9f4fdd6000 ---p 000a6000 fd:00 13508908                   /opt/caen/matlab-2016a/bin/glnxa64/libut.so
+7f9f4fdd6000-7f9f4fde1000 rw-p 000a5000 fd:00 13508908                   /opt/caen/matlab-2016a/bin/glnxa64/libut.so
+7f9f4fde1000-7f9f4fdf3000 rw-p 00000000 00:00 0 
+7f9f4fdf3000-7f9f4fe00000 r-xp 00000000 fd:00 13508792                   /opt/caen/matlab-2016a/bin/glnxa64/libnativeservices.so
+7f9f4fe00000-7f9f4ffff000 ---p 0000d000 fd:00 13508792                   /opt/caen/matlab-2016a/bin/glnxa64/libnativeservices.so
+7f9f4ffff000-7f9f50000000 rw-p 0000c000 fd:00 13508792                   /opt/caen/matlab-2016a/bin/glnxa64/libnativeservices.so
+7f9f50000000-7f9f5002c000 rw-p 00000000 00:00 0 
+7f9f5002c000-7f9f54000000 ---p 00000000 00:00 0 
+7f9f54000000-7f9f54021000 rw-p 00000000 00:00 0 
+7f9f54021000-7f9f58000000 ---p 00000000 00:00 0 
+7f9f58000000-7f9f58021000 rw-p 00000000 00:00 0 
+7f9f58021000-7f9f5c000000 ---p 00000000 00:00 0 
+7f9f5c000000-7f9f5c021000 rw-p 00000000 00:00 0 
+7f9f5c021000-7f9f60000000 ---p 00000000 00:00 0 
+7f9f60000000-7f9f6035b000 rw-p 00000000 00:00 0 
+7f9f6035b000-7f9f64000000 ---p 00000000 00:00 0 
+7f9f64000000-7f9f64021000 rw-p 00000000 00:00 0 
+7f9f64021000-7f9f68000000 ---p 00000000 00:00 0 
+7f9f68000000-7f9f68021000 rw-p 00000000 00:00 0 
+7f9f68021000-7f9f6c000000 ---p 00000000 00:00 0 
+7f9f6c000000-7f9f6c46b000 rw-p 00000000 00:00 0 
+7f9f6c46b000-7f9f70000000 ---p 00000000 00:00 0 
+7f9f70000000-7f9f70021000 rw-p 00000000 00:00 0 
+7f9f70021000-7f9f74000000 ---p 00000000 00:00 0 
+7f9f74000000-7f9f74021000 rw-p 00000000 00:00 0 
+7f9f74021000-7f9f78000000 ---p 00000000 00:00 0 
+7f9f78000000-7f9f78021000 rw-p 00000000 00:00 0 
+7f9f78021000-7f9f7c000000 ---p 00000000 00:00 0 
+7f9f7c036000-7f9f7c03f000 r--s 00251000 fd:00 14290573                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/resources.jar
+7f9f7c03f000-7f9f7c043000 r--s 0007d000 fd:00 14290510                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/jsse.jar
+7f9f7c043000-7f9f7c045000 r--s 00000000 fd:00 662294                     /var/cache/fontconfig/87f5e051180a7a75f16eb6fe7dbd3749-le64.cache-4
+7f9f7c045000-7f9f7c050000 r--s 00000000 fd:00 661863                     /var/cache/fontconfig/b79f3aaa7d385a141ab53ec885cc22a8-le64.cache-4
+7f9f7c050000-7f9f7c053000 r--s 00000000 fd:00 672687                     /var/cache/fontconfig/0b1bcc92b4d25cc154d77dafe3bceaa0-le64.cache-4
+7f9f7c053000-7f9f7c055000 r--s 00000000 fd:00 672686                     /var/cache/fontconfig/711dae798b6bff4224ea2776edcb5c93-le64.cache-4
+7f9f7c055000-7f9f7c057000 r--s 00000000 fd:00 672685                     /var/cache/fontconfig/2e1514a9fdd499050989183bb65136db-le64.cache-4
+7f9f7c057000-7f9f7c061000 r--s 00000000 fd:00 672684                     /var/cache/fontconfig/75726aeed9fe8691fd29315754d820cc-le64.cache-4
+7f9f7c061000-7f9f7c063000 r--s 00000000 fd:00 672683                     /var/cache/fontconfig/3f821257dd33660ba7bbb45c32deb84c-le64.cache-4
+7f9f7c063000-7f9f7c066000 r--s 00000000 fd:00 672682                     /var/cache/fontconfig/830f035fa84a65ce80e050178dbb630d-le64.cache-4
+7f9f7c066000-7f9f7c067000 r--s 00000000 fd:00 672681                     /var/cache/fontconfig/81a173283b451552b599cfaafd6236bd-le64.cache-4
+7f9f7c067000-7f9f7c068000 r--s 00000000 fd:00 672680                     /var/cache/fontconfig/ac68f755438cc3dc5a526084839fc7ca-le64.cache-4
+7f9f7c068000-7f9f7c069000 r--s 00000000 fd:00 672679                     /var/cache/fontconfig/f951a6bc01c50d58ac4af16a0108457e-le64.cache-4
+7f9f7c069000-7f9f7c06a000 r--s 00000000 fd:00 672678                     /var/cache/fontconfig/12513961c6e7090f8648812f9eaf65d6-le64.cache-4
+7f9f7c06a000-7f9f7c06d000 r--s 00000000 fd:00 672668                     /var/cache/fontconfig/e26bf336397aae6fcef4d3803472adec-le64.cache-4
+7f9f7c06d000-7f9f7c06e000 r--s 00000000 fd:00 672629                     /var/cache/fontconfig/f132fa2327207a6ac3298c0518879731-le64.cache-4
+7f9f7c06e000-7f9f7c071000 r--s 00000000 fd:00 656924                     /var/cache/fontconfig/0fef740e1edd47736fa2cccff935ab7c-le64.cache-4
+7f9f7c071000-7f9f7c072000 r--s 00000000 fd:00 672618                     /var/cache/fontconfig/6fcb01a03a016cc71057b587cdea6709-le64.cache-4
+7f9f7c072000-7f9f7c076000 r--s 00000000 fd:00 662336                     /var/cache/fontconfig/29c8f5b6bf15d25ebb2e963855ab41be-le64.cache-4
+7f9f7c076000-7f9f7c079000 r--s 00000000 fd:00 662335                     /var/cache/fontconfig/e0636055caa850f70f1a6db008fc4729-le64.cache-4
+7f9f7c079000-7f9f7c07a000 r--s 00000000 fd:00 662334                     /var/cache/fontconfig/46d51d90fe9d963f6f4186edb936a931-le64.cache-4
+7f9f7c07a000-7f9f7c0fa000 rw-p 00000000 00:00 0 
+7f9f7c0fa000-7f9f7c0fe000 r--s 00000000 fd:00 662333                     /var/cache/fontconfig/cfde08ab28ad1d91784abb10973575e3-le64.cache-4
+7f9f7c0fe000-7f9f7c0ff000 r--s 00000000 fd:00 662332                     /var/cache/fontconfig/b887eea8f1b96e1d899b44ed6681fc27-le64.cache-4
+7f9f7c0ff000-7f9f7c100000 r--s 00000000 fd:00 662331                     /var/cache/fontconfig/860639f272b8b4b3094f9e399e41bccd-le64.cache-4
+7f9f7c100000-7f9f7c101000 r--s 00000000 fd:00 662319                     /var/cache/fontconfig/211368abcb0ff835c229ff05c9ec01dc-le64.cache-4
+7f9f7c101000-7f9f7c102000 r--s 00000000 fd:00 662318                     /var/cache/fontconfig/c46020d7221988a13df853d2b46304fc-le64.cache-4
+7f9f7c102000-7f9f7c103000 r--s 00000000 fd:00 662317                     /var/cache/fontconfig/d759ee9cd048e494517a1be23d25a662-le64.cache-4
+7f9f7c103000-7f9f7c104000 r--s 00000000 fd:00 662316                     /var/cache/fontconfig/d290456e58f67f52b0f8f224126f9ea8-le64.cache-4
+7f9f7c104000-7f9f7c105000 r--s 00000000 fd:00 662312                     /var/cache/fontconfig/fa2b533b7056bdadb961f088bc0a978b-le64.cache-4
+7f9f7c105000-7f9f7c106000 r--s 00000000 fd:00 662311                     /var/cache/fontconfig/df893b4576ad6107f9397134092c4059-le64.cache-4
+7f9f7c106000-7f9f7c107000 r--s 00000000 fd:00 662309                     /var/cache/fontconfig/900402270e15d763a6e008bb2d4c7686-le64.cache-4
+7f9f7c107000-7f9f7c108000 r--s 00000000 fd:00 662308                     /var/cache/fontconfig/47f48679023f44a4d1e44699a69464f6-le64.cache-4
+7f9f7c108000-7f9f7c109000 r--s 00000000 fd:00 662307                     /var/cache/fontconfig/2881ed3fd21ca306ddad6f9b0dd3189f-le64.cache-4
+7f9f7c109000-7f9f7c10a000 r--s 00000000 fd:00 662306                     /var/cache/fontconfig/3c3fb04d32a5211b073874b125d29701-le64.cache-4
+7f9f7c10a000-7f9f7c10b000 r--s 00000000 fd:00 662305                     /var/cache/fontconfig/e61abf8156cc476151baa07d67337cae-le64.cache-4
+7f9f7c10b000-7f9f7c110000 r--s 00000000 fd:00 662303                     /var/cache/fontconfig/b67b32625a2bb51b023d3814a918f351-le64.cache-4
+7f9f7c110000-7f9f7c112000 r--s 00000000 fd:00 662302                     /var/cache/fontconfig/d3379abda271c4acd2ad0c01f565d0b0-le64.cache-4
+7f9f7c112000-7f9f7c114000 r--s 00000000 fd:00 662300                     /var/cache/fontconfig/99a1ce9f8b6a0434aadb01d3779b0780-le64.cache-4
+7f9f7c114000-7f9f7c127000 r--s 00000000 fd:00 662296                     /var/cache/fontconfig/614d1caaa4d7914789410f6367de37ca-le64.cache-4
+7f9f7c127000-7f9f7c132000 r--s 00000000 fd:00 662295                     /var/cache/fontconfig/12b26b760a24f8b4feb03ad48a333a72-le64.cache-4
+7f9f7c132000-7f9f7c13a000 r--s 00000000 fd:00 662292                     /var/cache/fontconfig/928306c3ad40271d946e41014a49fc28-le64.cache-4
+7f9f7c13a000-7f9f7c43d000 rwxp 00000000 00:00 0                          [stack:16236]
+7f9f7c43d000-7f9f7c442000 r-xp 00000000 fd:00 31462014                   /usr/lib64/libXfixes.so.3.1.0
+7f9f7c442000-7f9f7c641000 ---p 00005000 fd:00 31462014                   /usr/lib64/libXfixes.so.3.1.0
+7f9f7c641000-7f9f7c642000 r--p 00004000 fd:00 31462014                   /usr/lib64/libXfixes.so.3.1.0
+7f9f7c642000-7f9f7c643000 rw-p 00005000 fd:00 31462014                   /usr/lib64/libXfixes.so.3.1.0
+7f9f7c643000-7f9f7c64d000 r-xp 00000000 fd:00 31462032                   /usr/lib64/libXcursor.so.1.0.2
+7f9f7c64d000-7f9f7c84c000 ---p 0000a000 fd:00 31462032                   /usr/lib64/libXcursor.so.1.0.2
+7f9f7c84c000-7f9f7c84d000 r--p 00009000 fd:00 31462032                   /usr/lib64/libXcursor.so.1.0.2
+7f9f7c84d000-7f9f7c84e000 rw-p 0000a000 fd:00 31462032                   /usr/lib64/libXcursor.so.1.0.2
+7f9f7c84e000-7f9f7c84f000 r--s 00000000 fd:00 662301                     /var/cache/fontconfig/b4d0b56f766d89640448751fcd18ec1e-le64.cache-4
+7f9f7c84f000-7f9f7c851000 r--s 00000000 fd:00 662297                     /var/cache/fontconfig/f9d379b867d7c69c85310a4f24e5228f-le64.cache-4
+7f9f7c851000-7f9f7c852000 r--s 00000000 fd:00 662291                     /var/cache/fontconfig/3640555adad8a8f6978400293cfce7ab-le64.cache-4
+7f9f7c852000-7f9f7c856000 r--s 00000000 fd:00 662290                     /var/cache/fontconfig/beeeeb3dfe132a8a0633a017c99ce0c0-le64.cache-4
+7f9f7c856000-7f9f7c876000 rw-p 00000000 00:00 0 
+7f9f7c876000-7f9f7c977000 rwxp 00000000 00:00 0                          [stack:16235]
+7f9f7c977000-7f9f7c97b000 r--s 0001f000 fd:00 13528039                   /opt/caen/matlab-2016a/java/jarext/axis2/XmlSchema.jar
+7f9f7c97b000-7f9f7c981000 r--s 0007a000 fd:00 13528054                   /opt/caen/matlab-2016a/java/jarext/axis2/wstx-asl.jar
+7f9f7c981000-7f9f7c986000 r--s 00020000 fd:00 13528053                   /opt/caen/matlab-2016a/java/jarext/axis2/wsdl4j.jar
+7f9f7c986000-7f9f7c988000 r--s 00007000 fd:00 13528052                   /opt/caen/matlab-2016a/java/jarext/axis2/neethi.jar
+7f9f7c988000-7f9f7c98e000 r--s 00059000 fd:00 13528051                   /opt/caen/matlab-2016a/java/jarext/axis2/mail.jar
+7f9f7c98e000-7f9f7c993000 r--s 00026000 fd:00 13528050                   /opt/caen/matlab-2016a/java/jarext/axis2/httpcore.jar
+7f9f7c993000-7f9f7c999000 r--s 00045000 fd:00 13528048                   /opt/caen/matlab-2016a/java/jarext/axis2/commons-httpclient.jar
+7f9f7c999000-7f9f7c99c000 r--s 00023000 fd:00 13528046                   /opt/caen/matlab-2016a/java/jarext/axis2/axis2-transport-http.jar
+7f9f7c99c000-7f9f7c9a9000 r--s 000e8000 fd:00 13528045                   /opt/caen/matlab-2016a/java/jarext/axis2/axis2-kernel.jar
+7f9f7c9a9000-7f9f7c9b4000 r--s 000b4000 fd:00 13528044                   /opt/caen/matlab-2016a/java/jarext/axis2/axis2-adb.jar
+7f9f7c9b4000-7f9f7c9b6000 r-xp 00000000 fd:00 31461954                   /usr/lib64/libXau.so.6.0.0
+7f9f7c9b6000-7f9f7cbb6000 ---p 00002000 fd:00 31461954                   /usr/lib64/libXau.so.6.0.0
+7f9f7cbb6000-7f9f7cbb7000 r--p 00002000 fd:00 31461954                   /usr/lib64/libXau.so.6.0.0
+7f9f7cbb7000-7f9f7cbb8000 rw-p 00003000 fd:00 31461954                   /usr/lib64/libXau.so.6.0.0
+7f9f7cbb8000-7f9f7cbd9000 r-xp 00000000 fd:00 31462006                   /usr/lib64/libxcb.so.1.1.0
+7f9f7cbd9000-7f9f7cdd8000 ---p 00021000 fd:00 31462006                   /usr/lib64/libxcb.so.1.1.0
+7f9f7cdd8000-7f9f7cdd9000 r--p 00020000 fd:00 31462006                   /usr/lib64/libxcb.so.1.1.0
+7f9f7cdd9000-7f9f7cdda000 rw-p 00021000 fd:00 31462006                   /usr/lib64/libxcb.so.1.1.0
+7f9f7cdda000-7f9f7cde9000 r-xp 00000000 fd:00 31462016                   /usr/lib64/libXi.so.6.1.0
+7f9f7cde9000-7f9f7cfe8000 ---p 0000f000 fd:00 31462016                   /usr/lib64/libXi.so.6.1.0
+7f9f7cfe8000-7f9f7cfe9000 r--p 0000e000 fd:00 31462016                   /usr/lib64/libXi.so.6.1.0
+7f9f7cfe9000-7f9f7cfea000 rw-p 0000f000 fd:00 31462016                   /usr/lib64/libXi.so.6.1.0
+7f9f7cfea000-7f9f7cfef000 r-xp 00000000 fd:00 31462026                   /usr/lib64/libXtst.so.6.1.0
+7f9f7cfef000-7f9f7d1ee000 ---p 00005000 fd:00 31462026                   /usr/lib64/libXtst.so.6.1.0
+7f9f7d1ee000-7f9f7d1ef000 r--p 00004000 fd:00 31462026                   /usr/lib64/libXtst.so.6.1.0
+7f9f7d1ef000-7f9f7d1f0000 rw-p 00005000 fd:00 31462026                   /usr/lib64/libXtst.so.6.1.0
+7f9f7d1f0000-7f9f7d1f9000 r-xp 00000000 fd:00 31462018                   /usr/lib64/libXrender.so.1.3.0
+7f9f7d1f9000-7f9f7d3f8000 ---p 00009000 fd:00 31462018                   /usr/lib64/libXrender.so.1.3.0
+7f9f7d3f8000-7f9f7d3f9000 r--p 00008000 fd:00 31462018                   /usr/lib64/libXrender.so.1.3.0
+7f9f7d3f9000-7f9f7d3fa000 rw-p 00009000 fd:00 31462018                   /usr/lib64/libXrender.so.1.3.0
+7f9f7d3fa000-7f9f7d532000 r-xp 00000000 fd:00 31462009                   /usr/lib64/libX11.so.6.3.0
+7f9f7d532000-7f9f7d732000 ---p 00138000 fd:00 31462009                   /usr/lib64/libX11.so.6.3.0
+7f9f7d732000-7f9f7d733000 r--p 00138000 fd:00 31462009                   /usr/lib64/libX11.so.6.3.0
+7f9f7d733000-7f9f7d738000 rw-p 00139000 fd:00 31462009                   /usr/lib64/libX11.so.6.3.0
+7f9f7d738000-7f9f7d749000 r-xp 00000000 fd:00 31462012                   /usr/lib64/libXext.so.6.4.0
+7f9f7d749000-7f9f7d948000 ---p 00011000 fd:00 31462012                   /usr/lib64/libXext.so.6.4.0
+7f9f7d948000-7f9f7d949000 r--p 00010000 fd:00 31462012                   /usr/lib64/libXext.so.6.4.0
+7f9f7d949000-7f9f7d94a000 rw-p 00011000 fd:00 31462012                   /usr/lib64/libXext.so.6.4.0
+7f9f7d94a000-7f9f7d94c000 r--s 00006000 fd:00 13528049                   /opt/caen/matlab-2016a/java/jarext/axis2/geronimo-stax-api.jar
+7f9f7d94c000-7f9f7d94f000 r--s 0001b000 fd:00 13528043                   /opt/caen/matlab-2016a/java/jarext/axis2/axiom-impl.jar
+7f9f7d94f000-7f9f7d958000 r--s 0005d000 fd:00 13528042                   /opt/caen/matlab-2016a/java/jarext/axis2/axiom-api.jar
+7f9f7d958000-7f9f7d960000 r--s 00053000 fd:00 13528196                   /opt/caen/matlab-2016a/java/jarext/jgoodies-looks.jar
+7f9f7d960000-7f9f7d966000 r--s 00054000 fd:00 13528147                   /opt/caen/matlab-2016a/java/jarext/felix.jar
+7f9f7d966000-7f9f7d972000 r--s 0009f000 fd:00 13528312                   /opt/caen/matlab-2016a/java/jarext/webservices/urlmanager/urlmanager.jar
+7f9f7d972000-7f9f7d9c2000 r-xp 00000000 fd:00 14290335                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/xawt/libmawt.so
+7f9f7d9c2000-7f9f7dbc2000 ---p 00050000 fd:00 14290335                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/xawt/libmawt.so
+7f9f7dbc2000-7f9f7dbc6000 rw-p 00050000 fd:00 14290335                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/xawt/libmawt.so
+7f9f7dbc6000-7f9f7dbc7000 rw-p 00000000 00:00 0 
+7f9f7dbc7000-7f9f7dc69000 r-xp 00000000 fd:00 14290288                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libawt.so
+7f9f7dc69000-7f9f7de69000 ---p 000a2000 fd:00 14290288                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libawt.so
+7f9f7de69000-7f9f7de75000 rw-p 000a2000 fd:00 14290288                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libawt.so
+7f9f7de75000-7f9f7de99000 rw-p 00000000 00:00 0 
+7f9f7de99000-7f9f7de9a000 ---p 00000000 00:00 0 
+7f9f7de9a000-7f9f7e09b000 rwxp 00000000 00:00 0                          [stack:16233]
+7f9f7e09b000-7f9f7e09c000 ---p 00000000 00:00 0 
+7f9f7e09c000-7f9f7e19c000 rwxp 00000000 00:00 0                          [stack:16232]
+7f9f7e19c000-7f9f7e19d000 ---p 00000000 00:00 0 
+7f9f7e19d000-7f9f7e5a0000 rwxp 00000000 00:00 0                          [stack:16228]
+7f9f7e5a0000-7f9f7e5a1000 ---p 00000000 00:00 0 
+7f9f7e5a1000-7f9f7e6a1000 rwxp 00000000 00:00 0                          [stack:16227]
+7f9f7e6a1000-7f9f80181000 rw-p 00000000 00:00 0 
+7f9f80181000-7f9f80340000 r--s 031c1000 fd:00 14290574                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/rt.jar
+7f9f80340000-7f9f88000000 rw-p 00000000 00:00 0 
+7f9f88000000-7f9f88021000 rw-p 00000000 00:00 0 
+7f9f88021000-7f9f8c000000 ---p 00000000 00:00 0 
+7f9f8c000000-7f9f8c021000 rw-p 00000000 00:00 0 
+7f9f8c021000-7f9f90000000 ---p 00000000 00:00 0 
+7f9f90000000-7f9f90021000 rw-p 00000000 00:00 0 
+7f9f90021000-7f9f94000000 ---p 00000000 00:00 0 
+7f9f94000000-7f9f94021000 rw-p 00000000 00:00 0 
+7f9f94021000-7f9f98000000 ---p 00000000 00:00 0 
+7f9f98000000-7f9f98021000 rw-p 00000000 00:00 0 
+7f9f98021000-7f9f9c000000 ---p 00000000 00:00 0 
+7f9f9c000000-7f9f9c021000 rw-p 00000000 00:00 0 
+7f9f9c021000-7f9fa0000000 ---p 00000000 00:00 0 
+7f9fa0000000-7f9fa0021000 rw-p 00000000 00:00 0 
+7f9fa0021000-7f9fa4000000 ---p 00000000 00:00 0 
+7f9fa4000000-7f9fa4021000 rw-p 00000000 00:00 0 
+7f9fa4021000-7f9fa8000000 ---p 00000000 00:00 0 
+7f9fa8000000-7f9fa8001000 r--s 00004000 fd:00 13528047                   /opt/caen/matlab-2016a/java/jarext/axis2/axis2-transport-local.jar
+7f9fa8001000-7f9fa8003000 r--s 0000e000 fd:00 13528041                   /opt/caen/matlab-2016a/java/jarext/axis2/activation.jar
+7f9fa8003000-7f9fa8005000 r--s 0000d000 fd:00 13528085                   /opt/caen/matlab-2016a/java/jarext/commons-logging.jar
+7f9fa8005000-7f9fa8009000 r--s 00038000 fd:00 13528084                   /opt/caen/matlab-2016a/java/jarext/commons-lang.jar
+7f9fa8009000-7f9fa89fa000 rw-p 00000000 00:00 0 
+7f9fa89fa000-7f9fa89fb000 ---p 00000000 00:00 0 
+7f9fa89fb000-7f9fa8afb000 rwxp 00000000 00:00 0                          [stack:16226]
+7f9fa8afb000-7f9fa8afc000 ---p 00000000 00:00 0 
+7f9fa8afc000-7f9fa8bfc000 rwxp 00000000 00:00 0                          [stack:16225]
+7f9fa8bfc000-7f9fa8bfd000 ---p 00000000 00:00 0 
+7f9fa8bfd000-7f9fa8cfd000 rwxp 00000000 00:00 0                          [stack:16224]
+7f9fa8cfd000-7f9fa8cfe000 ---p 00000000 00:00 0 
+7f9fa8cfe000-7f9fa8dfe000 rwxp 00000000 00:00 0                          [stack:16223]
+7f9fa8dfe000-7f9fa8dff000 ---p 00000000 00:00 0 
+7f9fa8dff000-7f9fa8eff000 rwxp 00000000 00:00 0                          [stack:16222]
+7f9fa8eff000-7f9fa8f00000 ---p 00000000 00:00 0 
+7f9fa8f00000-7f9fa9270000 rwxp 00000000 00:00 0                          [stack:16221]
+7f9fa9270000-7f9fac246000 rw-p 00000000 00:00 0 
+7f9fac246000-7f9fb0000000 ---p 00000000 00:00 0 
+7f9fb0000000-7f9fb0002000 r--s 0000a000 fd:00 13528078                   /opt/caen/matlab-2016a/java/jarext/commons-codec.jar
+7f9fb0002000-7f9fb0003000 r--s 00008000 fd:00 13528077                   /opt/caen/matlab-2016a/java/jarext/commons-cli.jar
+7f9fb0003000-7f9fb0005000 r--s 00003000 fd:00 13527970                   /opt/caen/matlab-2016a/java/jar/webproxy.jar
+7f9fb0005000-7f9fb0018000 r--s 000bc000 fd:00 13527817                   /opt/caen/matlab-2016a/java/jar/mwswing.jar
+7f9fb0018000-7f9fb00e9000 rw-p 00000000 00:00 0 
+7f9fb00e9000-7f9fb00ea000 ---p 00000000 00:00 0 
+7f9fb00ea000-7f9fb01ea000 rwxp 00000000 00:00 0                          [stack:16220]
+7f9fb01ea000-7f9fb01eb000 ---p 00000000 00:00 0 
+7f9fb01eb000-7f9fb02eb000 rwxp 00000000 00:00 0                          [stack:16219]
+7f9fb02eb000-7f9fb02f6000 rw-p 00000000 00:00 0 
+7f9fb02f6000-7f9fb0314000 rw-p 00000000 00:00 0 
+7f9fb0314000-7f9fb0366000 rw-p 00000000 00:00 0 
+7f9fb0366000-7f9fb082c000 rw-p 00000000 00:00 0 
+7f9fb082c000-7f9fb0837000 rw-p 00000000 00:00 0 
+7f9fb0837000-7f9fb0855000 rw-p 00000000 00:00 0 
+7f9fb0855000-7f9fb08a7000 rw-p 00000000 00:00 0 
+7f9fb08a7000-7f9fb0d6c000 rw-p 00000000 00:00 0 
+7f9fb0d6c000-7f9fb0d95000 rw-p 00000000 00:00 0 
+7f9fb0d95000-7f9fb0ff8000 rw-p 00000000 00:00 0 
+7f9fb0ff8000-7f9fb0ff9000 rw-p 00000000 00:00 0 
+7f9fb0ff9000-7f9fb1013000 r-xp 00000000 fd:00 14290331                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libzip.so
+7f9fb1013000-7f9fb1213000 ---p 0001a000 fd:00 14290331                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libzip.so
+7f9fb1213000-7f9fb1214000 rw-p 0001a000 fd:00 14290331                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libzip.so
+7f9fb1214000-7f9fb1a19000 r--s 00000000 fd:00 658542                     /var/lib/sss/mc/passwd (deleted)
+7f9fb1a19000-7f9fb1a21000 r-xp 00000000 fd:00 31473118                   /usr/lib64/libnss_sss.so.2
+7f9fb1a21000-7f9fb1c20000 ---p 00008000 fd:00 31473118                   /usr/lib64/libnss_sss.so.2
+7f9fb1c20000-7f9fb1c21000 r--p 00007000 fd:00 31473118                   /usr/lib64/libnss_sss.so.2
+7f9fb1c21000-7f9fb1c22000 rw-p 00008000 fd:00 31473118                   /usr/lib64/libnss_sss.so.2
+7f9fb1c22000-7f9fb1c2e000 r-xp 00000000 fd:00 31457999                   /usr/lib64/libnss_files-2.17.so
+7f9fb1c2e000-7f9fb1e2d000 ---p 0000c000 fd:00 31457999                   /usr/lib64/libnss_files-2.17.so
+7f9fb1e2d000-7f9fb1e2e000 r--p 0000b000 fd:00 31457999                   /usr/lib64/libnss_files-2.17.so
+7f9fb1e2e000-7f9fb1e2f000 rw-p 0000c000 fd:00 31457999                   /usr/lib64/libnss_files-2.17.so
+7f9fb1e2f000-7f9fb1e35000 rw-p 00000000 00:00 0 
+7f9fb1e35000-7f9fb1e5e000 r-xp 00000000 fd:00 14290302                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libjava.so
+7f9fb1e5e000-7f9fb205e000 ---p 00029000 fd:00 14290302                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libjava.so
+7f9fb205e000-7f9fb2060000 rw-p 00029000 fd:00 14290302                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libjava.so
+7f9fb2060000-7f9fb206d000 r-xp 00000000 fd:00 14290330                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libverify.so
+7f9fb206d000-7f9fb226c000 ---p 0000d000 fd:00 14290330                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libverify.so
+7f9fb226c000-7f9fb226e000 rw-p 0000c000 fd:00 14290330                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/libverify.so
+7f9fb226e000-7f9fb2275000 r-xp 00000000 fd:00 31458011                   /usr/lib64/librt-2.17.so
+7f9fb2275000-7f9fb2474000 ---p 00007000 fd:00 31458011                   /usr/lib64/librt-2.17.so
+7f9fb2474000-7f9fb2475000 r--p 00006000 fd:00 31458011                   /usr/lib64/librt-2.17.so
+7f9fb2475000-7f9fb2476000 rw-p 00007000 fd:00 31458011                   /usr/lib64/librt-2.17.so
+7f9fb2476000-7f9fb2576000 r-xp 00000000 fd:00 31457989                   /usr/lib64/libm-2.17.so
+7f9fb2576000-7f9fb2776000 ---p 00100000 fd:00 31457989                   /usr/lib64/libm-2.17.so
+7f9fb2776000-7f9fb2777000 r--p 00100000 fd:00 31457989                   /usr/lib64/libm-2.17.so
+7f9fb2777000-7f9fb2778000 rw-p 00101000 fd:00 31457989                   /usr/lib64/libm-2.17.so
+7f9fb2778000-7f9fb32e8000 r-xp 00000000 fd:00 14290334                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so
+7f9fb32e8000-7f9fb34e7000 ---p 00b70000 fd:00 14290334                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so
+7f9fb34e7000-7f9fb35ab000 rw-p 00b6f000 fd:00 14290334                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so
+7f9fb35ab000-7f9fb35ec000 rw-p 00000000 00:00 0 
+7f9fb35ec000-7f9fb37a2000 r-xp 00000000 fd:00 31457981                   /usr/lib64/libc-2.17.so
+7f9fb37a2000-7f9fb39a2000 ---p 001b6000 fd:00 31457981                   /usr/lib64/libc-2.17.so
+7f9fb39a2000-7f9fb39a6000 r--p 001b6000 fd:00 31457981                   /usr/lib64/libc-2.17.so
+7f9fb39a6000-7f9fb39a8000 rw-p 001ba000 fd:00 31457981                   /usr/lib64/libc-2.17.so
+7f9fb39a8000-7f9fb39ad000 rw-p 00000000 00:00 0 
+7f9fb39ad000-7f9fb39af000 r-xp 00000000 fd:00 31457987                   /usr/lib64/libdl-2.17.so
+7f9fb39af000-7f9fb3baf000 ---p 00002000 fd:00 31457987                   /usr/lib64/libdl-2.17.so
+7f9fb3baf000-7f9fb3bb0000 r--p 00002000 fd:00 31457987                   /usr/lib64/libdl-2.17.so
+7f9fb3bb0000-7f9fb3bb1000 rw-p 00003000 fd:00 31457987                   /usr/lib64/libdl-2.17.so
+7f9fb3bb1000-7f9fb3bc7000 r-xp 00000000 fd:00 14290284                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/jli/libjli.so
+7f9fb3bc7000-7f9fb3dc7000 ---p 00016000 fd:00 14290284                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/jli/libjli.so
+7f9fb3dc7000-7f9fb3dc8000 rw-p 00016000 fd:00 14290284                   /opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/jli/libjli.so
+7f9fb3dc8000-7f9fb3ddf000 r-xp 00000000 fd:00 31458007                   /usr/lib64/libpthread-2.17.so
+7f9fb3ddf000-7f9fb3fde000 ---p 00017000 fd:00 31458007                   /usr/lib64/libpthread-2.17.so
+7f9fb3fde000-7f9fb3fdf000 r--p 00016000 fd:00 31458007                   /usr/lib64/libpthread-2.17.so
+7f9fb3fdf000-7f9fb3fe0000 rw-p 00017000 fd:00 31458007                   /usr/lib64/libpthread-2.17.so
+7f9fb3fe0000-7f9fb3fe4000 rw-p 00000000 00:00 0 
+7f9fb3fe4000-7f9fb4004000 r-xp 00000000 fd:00 31457974                   /usr/lib64/ld-2.17.so
+7f9fb4004000-7f9fb4007000 r--s 0000f000 fd:00 13527816                   /opt/caen/matlab-2016a/java/jar/mvm.jar
+7f9fb4007000-7f9fb400e000 r--s 0003c000 fd:00 13527967                   /opt/caen/matlab-2016a/java/jar/util.jar
+7f9fb400e000-7f9fb4014000 r--s 00039000 fd:00 13527865                   /opt/caen/matlab-2016a/java/jar/services.jar
+7f9fb4014000-7f9fb401e000 rw-p 00000000 00:00 0 
+7f9fb401e000-7f9fb40d4000 rw-p 00000000 00:00 0 
+7f9fb40d4000-7f9fb40d5000 ---p 00000000 00:00 0 
+7f9fb40d5000-7f9fb41d5000 rwxp 00000000 00:00 0                          [stack:16218]
+7f9fb41d5000-7f9fb41da000 rw-p 00000000 00:00 0 
+7f9fb41da000-7f9fb41dc000 r--s 00002000 fd:00 13527819                   /opt/caen/matlab-2016a/java/jar/net.jar
+7f9fb41dc000-7f9fb41e2000 r--s 00035000 fd:00 13527814                   /opt/caen/matlab-2016a/java/jar/mlwebservices.jar
+7f9fb41e2000-7f9fb41e4000 r--s 00008000 fd:00 13527670                   /opt/caen/matlab-2016a/java/jar/fatalexit.jar
+7f9fb41e4000-7f9fb41f8000 r--s 0012d000 fd:00 13527665                   /opt/caen/matlab-2016a/java/jar/common.jar
+7f9fb41f8000-7f9fb4200000 rw-s 00000000 fd:02 1835014                    /tmp/hsperfdata_cpradeep/16217
+7f9fb4200000-7f9fb4201000 rw-p 00000000 00:00 0 
+7f9fb4201000-7f9fb4202000 r--p 00000000 00:00 0 
+7f9fb4202000-7f9fb4203000 rw-p 00000000 00:00 0 
+7f9fb4203000-7f9fb4204000 r--p 0001f000 fd:00 31457974                   /usr/lib64/ld-2.17.so
+7f9fb4204000-7f9fb4205000 rw-p 00020000 fd:00 31457974                   /usr/lib64/ld-2.17.so
+7f9fb4205000-7f9fb4206000 rw-p 00000000 00:00 0 
+7ffecc518000-7ffecc539000 rwxp 00000000 00:00 0                          [stack]
+7ffecc539000-7ffecc53a000 rw-p 00000000 00:00 0 
+7ffecc56d000-7ffecc56f000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+java_command: com.mathworks.fatalexit.FatalExitFrame /home/cpradeep/matlab_crash_dump.9187-1
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/opt/caen/matlab-2016a/bin:/opt/caen/matlab-2016a/bin/glnxa64:/usr/caen/hspice-2016.06/hspice/bin:/usr/caen/hspice-2016.06/hspice/GNU/linux64/gcc-4.8.3/bin:/usr/caen/hspice-2016.06/hspice/linux64:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/usr/um/bin:/usr/caen/bin/
+USERNAME=cpradeep
+LD_LIBRARY_PATH=/opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/server:/opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64:/opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/../lib/amd64:/opt/caen/matlab-2016a/sys/os/glnxa64:/opt/caen/matlab-2016a/bin/glnxa64:/opt/caen/matlab-2016a/extern/lib/glnxa64:/opt/caen/matlab-2016a/runtime/glnxa64:/opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/opt/caen/matlab-2016a/sys/java/jre/glnxa64/jre/lib/amd64/server:/usr/caen/hspice-2016.06/hspice/linux64/interfaces
+SHELL=/bin/bash
+DISPLAY=:0
+ARCH=glnxa64
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x99f0f0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x99f0f0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x81a6d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x81a6d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x81a6d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x81a6d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x81bed0], sa_mask[0]=0x08081402, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x81cfd0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x81cfd0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x81cfd0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x81cfd0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Red Hat Enterprise Linux Workstation release 7.3 (Maipo)
+
+uname:Linux 3.10.0-514.2.2.el7.x86_64 #1 SMP Wed Nov 16 13:15:13 EST 2016 x86_64
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8192k, CORE 0k, NPROC 4096, NOFILE 4096, AS infinity
+load average:0.00 0.01 0.05
+
+/proc/meminfo:
+MemTotal:       16014856 kB
+MemFree:         2322748 kB
+MemAvailable:   15124048 kB
+Buffers:          408204 kB
+Cached:         11779780 kB
+SwapCached:            0 kB
+Active:          2207888 kB
+Inactive:       10249288 kB
+Active(anon):     115992 kB
+Inactive(anon):   177108 kB
+Active(file):    2091896 kB
+Inactive(file): 10072180 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                84 kB
+Writeback:            36 kB
+AnonPages:        419912 kB
+Mapped:           143288 kB
+Shmem:             23808 kB
+Slab:            1079344 kB
+SReclaimable:     974352 kB
+SUnreclaim:       104992 kB
+KernelStack:        3840 kB
+PageTables:         8972 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     8007428 kB
+Committed_AS:    1155212 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      171556 kB
+VmallocChunk:   34359341052 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    282624 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:     1070308 kB
+DirectMap2M:     8114176 kB
+DirectMap1G:     7340032 kB
+
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, erms, ht, tsc, tscinvbit
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Xeon(R) CPU E3-1241 v3 @ 3.50GHz
+stepping	: 3
+microcode	: 0x20
+cpu MHz		: 3127.304
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips	: 6983.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Xeon(R) CPU E3-1241 v3 @ 3.50GHz
+stepping	: 3
+microcode	: 0x20
+cpu MHz		: 3139.062
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips	: 6983.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Xeon(R) CPU E3-1241 v3 @ 3.50GHz
+stepping	: 3
+microcode	: 0x20
+cpu MHz		: 3703.984
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips	: 6983.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Xeon(R) CPU E3-1241 v3 @ 3.50GHz
+stepping	: 3
+microcode	: 0x20
+cpu MHz		: 3562.480
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips	: 6983.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Xeon(R) CPU E3-1241 v3 @ 3.50GHz
+stepping	: 3
+microcode	: 0x20
+cpu MHz		: 3716.562
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips	: 6983.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Xeon(R) CPU E3-1241 v3 @ 3.50GHz
+stepping	: 3
+microcode	: 0x20
+cpu MHz		: 3591.601
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips	: 6983.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Xeon(R) CPU E3-1241 v3 @ 3.50GHz
+stepping	: 3
+microcode	: 0x20
+cpu MHz		: 3593.378
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips	: 6983.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Xeon(R) CPU E3-1241 v3 @ 3.50GHz
+stepping	: 3
+microcode	: 0x20
+cpu MHz		: 3654.218
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips	: 6983.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 16014856k(2322748k free), swap 0k(0k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.60-b09) for linux-amd64 JRE (1.7.0_60-b19), built on May  7 2014 13:18:30 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Mon Mar 13 08:00:03 2017
+elapsed time: 40786 seconds
+
